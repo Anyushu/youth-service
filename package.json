@@ -1,5 +1,5 @@
 {
-  "name": "irori",
+  "name": "youth_service",
   "version": "1.0.0",
   "description": "Original WP Themes Template",
   "private": true,
@@ -16,9 +16,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LAMP-Develop/irori.git"
+    "url": "git+https://github.com/Anyushu/youth-service.git"
   },
-  "author": "LAMP",
+  "author": "Anyushu",
   "license": "ISC",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.12.0",

@@ -1,0 +1,43 @@
+body {
+  position: relative;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: baseline;
+  border: 0;
+}
+
+p {
+  line-height: 1.7;
+}
+
+a {
+  &[href^="tel:"] {
+    @include media-breakpoint-up(md) {
+      pointer-events: none;
+    }
+  }
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.sec {
+  position: relative;
+  padding: 70px 0;
+}
+
+.bg-grid {
+  background-color: $light;
+  background-image: url("../images/bg_grid.png");
+  background-repeat: repeat;
+}
+
+.more-txt {
+  color: $body-color;
+  font-size: $font-size-sm;
+  font-weight: bold;
+}

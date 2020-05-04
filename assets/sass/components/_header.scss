@@ -1,0 +1,224 @@
+.header {
+  z-index: 10;
+  position: fixed;
+  top: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: nowrap;
+  background-color: $white;
+  box-sizing: border-box;
+  padding: 1.35rem 2.8rem;
+  border-radius: 5rem;
+  box-shadow: 0 0 5px rgba($black, 0.1);
+  &__h1 {
+    font-size: 0;
+    margin: 0;
+  }
+  &__nav {
+    margin-left: auto;
+    margin-right: 4rem;
+    &__list {
+      display: flex;
+      justify-content: center;
+      align-items: baseline;
+      flex-wrap: nowrap;
+      margin: 0;
+      padding: 0;
+      &__inner {
+        list-style: none;
+        a {
+          display: block;
+          color: $body-color;
+          text-align: center;
+          font-size: 0;
+          img {
+            display: block;
+            margin: 0 auto;
+          }
+          span {
+            display: block;
+            margin-top: 0.5em;
+            font-weight: bold;
+            line-height: 1;
+            font-size: 1rem;
+          }
+        }
+        &:nth-child(2) {
+          margin: 0 2.5rem;
+        }
+      }
+    }
+  }
+}
+
+.outermenu {
+  position: relative;
+  z-index: 11;
+  width: 60px;
+  height: 60px;
+  .hamburger {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 60px;
+    height: 60px;
+    padding: 0.5em 1em;
+    background: #2a9d63;
+    border-radius: 50%;
+    cursor: pointer;
+    -webkit-transition: box-shadow 0.4s ease;
+    transition: box-shadow 0.4s ease;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    & > div {
+      position: relative;
+      -webkit-box-flex: 0;
+      flex: none;
+      width: 100%;
+      height: 2px;
+      background: #fefefe;
+      -webkit-transition: all 0.4s ease;
+      transition: all 0.4s ease;
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      justify-content: center;
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        top: -10px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: inherit;
+        -webkit-transition: all 0.4s ease;
+        transition: all 0.4s ease;
+      }
+      &::after {
+        top: 10px;
+      }
+    }
+  }
+  &__wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    visibility: hidden;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    outline: 1px solid transparent;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    &__inner {
+      width: 200vw;
+      height: 200vw;
+      color: #fefefe;
+      background: rgba(41, 98, 255, 0.97);
+      border-radius: 50%;
+      -webkit-transition: all 0.4s ease;
+      transition: all 0.4s ease;
+      -webkit-box-flex: 0;
+      flex: none;
+      -webkit-transform: scale(0);
+      transform: scale(0);
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      overflow: hidden;
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      justify-content: center;
+      & > div {
+        text-align: center;
+        max-width: 90vw;
+        max-height: 100vh;
+        opacity: 0;
+        -webkit-transition: opacity 0.4s ease;
+        transition: opacity 0.4s ease;
+        overflow-y: auto;
+        -webkit-box-flex: 0;
+        flex: none;
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+      }
+    }
+  }
+  &--toggle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    opacity: 0;
+    &:checked {
+      & + .hamburger {
+        & > div {
+          -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+          &::before {
+            top: 0;
+            -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+          }
+          &::after {
+            opacity: 0;
+          }
+        }
+      }
+      & ~ .outermenu__wrap {
+        pointer-events: auto;
+        visibility: visible;
+        .outermenu__wrap__inner {
+          -webkit-transform: scale(1);
+          transform: scale(1);
+          -webkit-transition-duration: 0.75s;
+          transition-duration: 0.75s;
+          & > div {
+            opacity: 1;
+            -webkit-transition: opacity 0.4s ease 0.4s;
+            transition: opacity 0.4s ease 0.4s;
+          }
+        }
+      }
+    }
+    &:hover {
+      & + .hamburger {
+        box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+        & > div {
+          -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+        }
+      }
+    }
+  }
+}

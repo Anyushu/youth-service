@@ -1,0 +1,30 @@
+.mv {
+  &__sub {
+    position: relative;
+    font-size: 0;
+    & > img {
+      width: 100%;
+      height: auto;
+    }
+    &__ttl {
+      position: absolute;
+      width: 100%;
+      box-sizing: border-box;
+      text-align: center;
+      padding: 0 1rem;
+      top: 45%;
+      left: 0;
+    }
+    #breadcrumbs {
+      position: absolute;
+      left: 0;
+      bottom: 10%;
+      width: 100%;
+      a,
+      span {
+        color: $white !important;
+        font-size: 12px;
+      }
+    }
+  }
+}

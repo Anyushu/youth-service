@@ -15,6 +15,7 @@ p {
 }
 
 a {
+  transition: all 0.3s;
   &[href^="tel:"] {
     @include media-breakpoint-up(md) {
       pointer-events: none;
@@ -22,6 +23,7 @@ a {
   }
   &:hover {
     text-decoration: none;
+    opacity: 0.8;
   }
 }
 
@@ -40,4 +42,33 @@ a {
   color: $body-color;
   font-size: $font-size-sm;
   font-weight: bold;
+}
+
+.btn {
+  position: relative;
+  font-size: 1rem;
+  line-height: 1;
+  padding: 1.25em 5em;
+  border-radius: 3em;
+  font-weight: bold;
+  border-bottom: solid 4px;
+  i {
+    position: absolute;
+    top: 50%;
+    right: 1.5em;
+    transform: translateY(-50%);
+  }
+  &-warning {
+    border-color: #dac010;
+    i {
+      color: $body-color;
+    }
+  }
+  &-success {
+    border-color: #1f7349;
+    color: $white;
+    i {
+      color: $white;
+    }
+  }
 }

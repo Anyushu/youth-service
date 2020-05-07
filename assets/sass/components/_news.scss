@@ -6,6 +6,10 @@
     &__inner {
       display: block;
       list-style: none;
+      margin-bottom: 1.5rem;
+      &:last-child {
+        margin-bottom: 0;
+      }
       a {
         display: flex;
         justify-content: space-between;

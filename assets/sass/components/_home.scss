@@ -1,6 +1,64 @@
 .home {
   &__mv {
+    overflow: hidden;
+    position: relative;
     font-size: 0;
+    background: url("../images/bg_mv_pc.png") no-repeat center center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    &__copy {
+      position: absolute;
+      display: inline-block;
+      vertical-align: middle;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 45vw;
+      height: auto;
+      box-sizing: border-box;
+      padding: 0 5vw;
+      &__txt {
+        text-align: center;
+        font-size: $font-size-sm;
+        font-weight: bold;
+        margin-top: 2rem;
+      }
+    }
+    &__slide {
+      &--1 {
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        left: -3vw;
+        height: 100%;
+        width: 12vw;
+      }
+      &--2 {
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        left: 10vw;
+        height: 100%;
+        width: 12vw;
+      }
+      &--3 {
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        right: 10vw;
+        height: 100%;
+        width: 12vw;
+      }
+      &--4 {
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        right: -3vw;
+        height: 100%;
+        width: 12vw;
+      }
+    }
   }
   &__read {
     position: relative;
@@ -99,5 +157,63 @@
   }
   &__camp {
     padding-top: 0;
+    &__slide {
+      position: relative;
+      overflow: hidden;
+      .camplist {
+        box-sizing: border-box;
+        padding: 0 5vw;
+      }
+      &__prevarrow {
+        cursor: pointer;
+        position: absolute;
+        display: block;
+        top: 50%;
+        left: 8vw;
+        transform: translateY(-50%);
+        width: 3rem;
+        height: 3rem;
+        line-height: 3.3rem;
+        border-radius: 50%;
+        background-color: #22794d;
+        color: $white;
+        text-align: center;
+        i {
+          font-size: 1.5rem;
+          line-height: 1;
+        }
+      }
+      &__nextarrow {
+        cursor: pointer;
+        position: absolute;
+        display: block;
+        top: 50%;
+        right: 8vw;
+        transform: translateY(-50%);
+        width: 3rem;
+        height: 3rem;
+        line-height: 3.3rem;
+        border-radius: 50%;
+        background-color: #22794d;
+        color: $white;
+        text-align: center;
+        i {
+          font-size: 1.5rem;
+          line-height: 1;
+        }
+      }
+    }
+    &__btn {
+      text-align: center;
+      margin: 3rem 0 1rem;
+    }
+    &__blank {
+      text-align: center;
+      a {
+        color: $white;
+        text-decoration: underline;
+        font-size: $font-size-sm;
+      }
+    }
   }
 }

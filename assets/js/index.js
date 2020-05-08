@@ -92,4 +92,15 @@ $(function ($) {
     infinite: true,
     touchMove: false,
   });
+  $(".home__gallery__list").slick({
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 0,
+    cssEase: "linear",
+    speed: 10000,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    infinite: true,
+    touchMove: false,
+  });
 });

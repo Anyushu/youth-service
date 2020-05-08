@@ -11926,7 +11926,7 @@ a {
 
 .sec {
   position: relative;
-  padding: 70px 0; }
+  padding: 100px 0; }
 
 .bg-grid {
   background-color: #f2f9f5;
@@ -11945,6 +11945,7 @@ a {
   padding: 1.25em 5em;
   border-radius: 3em;
   font-weight: bold;
+  border: 0;
   border-bottom: solid 4px; }
   .btn i {
     position: absolute;
@@ -11952,14 +11953,11 @@ a {
     right: 1.5em;
     transform: translateY(-50%); }
   .btn-warning {
-    border-color: #dac010; }
-    .btn-warning i {
-      color: #222222; }
+    border-color: #dac010;
+    color: #222222; }
   .btn-success {
     border-color: #1f7349;
     color: #fff; }
-    .btn-success i {
-      color: #fff; }
 
 .slick-vertical .slick-slide {
   margin: 0.5rem 0; }
@@ -12290,7 +12288,8 @@ a {
       width: 30%; }
 
 .home__camp {
-  padding-top: 0; }
+  padding-top: 0;
+  padding-bottom: 140px; }
   .home__camp__slide {
     position: relative;
     overflow: hidden; }
@@ -12298,6 +12297,7 @@ a {
       box-sizing: border-box;
       padding: 0 5vw; }
     .home__camp__slide__prevarrow {
+      z-index: 1;
       cursor: pointer;
       position: absolute;
       display: block;
@@ -12315,6 +12315,7 @@ a {
         font-size: 1.5rem;
         line-height: 1; }
     .home__camp__slide__nextarrow {
+      z-index: 1;
       cursor: pointer;
       position: absolute;
       display: block;
@@ -12340,6 +12341,54 @@ a {
       color: #fff;
       text-decoration: underline;
       font-size: 0.875rem; }
+
+.home__gallery {
+  position: relative;
+  margin-top: -70px; }
+  .home__gallery__list .slick-slide {
+    margin: 0 10px; }
+
+.home__point__list {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap; }
+  .home__point__list__inner {
+    overflow: hidden;
+    width: 48%;
+    border-radius: 0.7rem;
+    border: solid 2px #dcdcdc;
+    border-bottom: solid 4px #dcdcdc;
+    border-top: 0; }
+    .home__point__list__inner > img {
+      width: 100%; }
+    .home__point__list__inner__txt {
+      box-sizing: border-box;
+      padding: 1.5rem;
+      text-align: center; }
+      .home__point__list__inner__txt h3 {
+        margin-bottom: 1rem; }
+      .home__point__list__inner__txt p {
+        margin: 0; }
+
+.home__point__caution {
+  text-align: right;
+  margin-top: 1rem;
+  color: #9a9a9a;
+  font-size: 0.875rem; }
+
+.home__point2__list {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap; }
+  .home__point2__list__inner {
+    width: 32%;
+    text-align: center; }
+    .home__point2__list__inner:nth-child(1), .home__point2__list__inner:nth-child(3) {
+      margin-top: 2rem; }
 
 .news__list {
   display: block;

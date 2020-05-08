@@ -531,10 +531,68 @@ get_header(); ?>
 <!-- home__camp__slide -->
 <div class="conteiner">
 <div class="home__camp__btn">
-<a class="btn btn-warning" href="">募集中キャンプ一覧を見てみる<i class="fas fa-play-circle text-success"></i></a>
+<a class="btn btn-warning" href="">募集中キャンプ一覧を見てみる<i class="fas fa-play-circle"></i></a>
 </div>
 <p class="home__camp__blank"><a href="">過去に実施したキャンプはこちら</a></p>
 </div>
 </section>
 <!-- home__camp -->
+<div class="home__gallery">
+<div class="home__gallery__list">
+<?php for ($i=1; $i <= 10; $i++): ?>
+<div><img src="<?php echo $wp_url; ?>/dist/images/loop_<?php echo $i; ?>.png" alt="スライド"></div>
+<?php endfor; ?>
+</div>
+<div class="home__camp__btn">
+<a class="btn btn-success" href="">写真ギャラリーはこちら<i class="fas fa-play-circle"></i></a>
+</div>
+</div>
+<!-- home__gallery -->
+<section class="sec home__point">
+<div class="container">
+<h2 class="text-center mb-5"><img src="<?php echo $wp_url; ?>/dist/images/ttl_point_pc.png" alt=""></h2>
+<p class="text-center">ユースサービス大阪は、半世紀にわたり蓄積してきたノウハウと豊かな人材を活かし、<br>初めてキャンプに参加するお子さまに安心して参加頂くための取り組みを徹底しています。</p>
+<div class="home__point__list">
+<div class="home__point__list__inner">
+<img src="<?php echo $wp_url; ?>/dist/images/point_img_1_pc.png" alt="">
+<div class="home__point__list__inner__txt">
+<h3><img src="<?php echo $wp_url; ?>/dist/images/point1_txt_pc.png" alt=""></h3>
+<p>キャンプに同行するアウトドアリーダーは<br>年18回の徹底した研修を受けております。</p>
+</div>
+</div>
+<!-- home__point__list__inner -->
+<div class="home__point__list__inner">
+<img src="<?php echo $wp_url; ?>/dist/images/point_img_2_pc.png" alt="">
+<div class="home__point__list__inner__txt">
+<h3><img src="<?php echo $wp_url; ?>/dist/images/point2_txt_pc.png" alt=""></h3>
+<p>お子さまの体調や万が一のケガに備えて、<br>看護師を帯同させております。※</p>
+</div>
+</div>
+<!-- home__point__list__inner -->
+</div>
+<!-- home__point__list -->
+<p class="home__point__caution">※帯同無しのキャンプもございます。</p>
+<div class="home__camp__btn">
+<a class="btn btn-success" href="">アウトドアリーダーとは<i class="fas fa-play-circle"></i></a>
+</div>
+</div>
+</section>
+<!-- home__point -->
+<section class="sec home__point2 bg-success">
+<div class="container">
+<h2 class="text-center mb-5"><img src="<?php echo $wp_url; ?>/dist/images/ttl_point2_pc.png" alt=""></h2>
+<p class="text-center text-white">ユースサービス大阪は、楽しくグループ活動が体験できるように、数多くの特色ある事業を企画しています。</p>
+<div class="home__point2__list">
+  <div class="home__point2__list__inner">
+    <img src="<?php echo $wp_url; ?>/dist/images/point2_1_pc.png" srcset="<?php echo $wp_url; ?>/dist/images/point2_1_pc.png 1x, <?php echo $wp_url; ?>/dist/images/point2_1_pc@2x.png 2x" alt="">
+  </div>
+  <div class="home__point2__list__inner">
+    <img src="<?php echo $wp_url; ?>/dist/images/point2_2_pc.png" srcset="<?php echo $wp_url; ?>/dist/images/point2_2_pc.png 1x, <?php echo $wp_url; ?>/dist/images/point2_2_pc@2x.png 2x" alt="">
+  </div>
+  <div class="home__point2__list__inner">
+    <img src="<?php echo $wp_url; ?>/dist/images/point2_3_pc.png" srcset="<?php echo $wp_url; ?>/dist/images/point2_3_pc.png 1x, <?php echo $wp_url; ?>/dist/images/point2_3_pc@2x.png 2x" alt="">
+  </div>
+</div>
+</div>
+</section>
 <?php get_footer();

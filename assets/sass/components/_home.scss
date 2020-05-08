@@ -157,6 +157,7 @@
   }
   &__camp {
     padding-top: 0;
+    padding-bottom: 140px;
     &__slide {
       position: relative;
       overflow: hidden;
@@ -165,6 +166,7 @@
         padding: 0 5vw;
       }
       &__prevarrow {
+        z-index: 1;
         cursor: pointer;
         position: absolute;
         display: block;
@@ -184,6 +186,7 @@
         }
       }
       &__nextarrow {
+        z-index: 1;
         cursor: pointer;
         position: absolute;
         display: block;
@@ -213,6 +216,69 @@
         color: $white;
         text-decoration: underline;
         font-size: $font-size-sm;
+      }
+    }
+  }
+  &__gallery {
+    position: relative;
+    margin-top: -70px;
+    &__list {
+      .slick-slide {
+        margin: 0 10px;
+      }
+    }
+  }
+  &__point {
+    &__list {
+      margin-top: 4rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: stretch;
+      flex-wrap: wrap;
+      &__inner {
+        overflow: hidden;
+        width: 48%;
+        border-radius: 0.7rem;
+        border: solid 2px #dcdcdc;
+        border-bottom: solid 4px #dcdcdc;
+        border-top: 0;
+        & > img {
+          width: 100%;
+        }
+        &__txt {
+          box-sizing: border-box;
+          padding: 1.5rem;
+          text-align: center;
+          h3 {
+            margin-bottom: 1rem;
+          }
+          p {
+            margin: 0;
+          }
+        }
+      }
+    }
+    &__caution {
+      text-align: right;
+      margin-top: 1rem;
+      color: #9a9a9a;
+      font-size: $font-size-sm;
+    }
+  }
+  &__point2 {
+    &__list {
+      margin-top: 4rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      &__inner {
+        width: 32%;
+        text-align: center;
+        &:nth-child(1),
+        &:nth-child(3) {
+          margin-top: 2rem;
+        }
       }
     }
   }

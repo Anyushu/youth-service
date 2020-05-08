@@ -29,7 +29,7 @@ a {
 
 .sec {
   position: relative;
-  padding: 70px 0;
+  padding: 100px 0;
 }
 
 .bg-grid {
@@ -51,6 +51,7 @@ a {
   padding: 1.25em 5em;
   border-radius: 3em;
   font-weight: bold;
+  border: 0;
   border-bottom: solid 4px;
   i {
     position: absolute;
@@ -60,15 +61,10 @@ a {
   }
   &-warning {
     border-color: #dac010;
-    i {
-      color: $body-color;
-    }
+    color: $body-color;
   }
   &-success {
     border-color: #1f7349;
     color: $white;
-    i {
-      color: $white;
-    }
   }
 }

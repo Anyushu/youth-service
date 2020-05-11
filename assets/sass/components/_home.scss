@@ -282,4 +282,18 @@
       }
     }
   }
+  &__program {
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      margin-bottom: 4rem;
+      &__inner {
+        overflow: hidden;
+        width: 48%;
+        text-align: center;
+      }
+    }
+  }
 }

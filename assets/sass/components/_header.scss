@@ -13,9 +13,17 @@
   padding: 1.35rem 2.8rem;
   border-radius: 5rem;
   box-shadow: 0 0 5px rgba($black, 0.1);
+  @include media-breakpoint-down(md) {
+    top: 1rem;
+    width: 95%;
+    padding: 1rem;
+  }
   &__h1 {
     font-size: 0;
     margin: 0;
+    @include media-breakpoint-down(md) {
+      max-width: 50vw;
+    }
   }
   &__nav {
     margin-left: auto;
@@ -27,6 +35,9 @@
       flex-wrap: nowrap;
       margin: 0;
       padding: 0;
+      @include media-breakpoint-down(md) {
+        display: none;
+      }
       &__inner {
         list-style: none;
         a {
@@ -59,6 +70,10 @@
   z-index: 11;
   width: 60px;
   height: 60px;
+  @include media-breakpoint-down(md) {
+    width: 3rem;
+    height: 3rem;
+  }
   .hamburger {
     position: absolute;
     top: 0;
@@ -80,6 +95,10 @@
     align-items: center;
     -webkit-box-pack: center;
     justify-content: center;
+    @include media-breakpoint-down(md) {
+      width: 3rem;
+      height: 3rem;
+    }
     & > div {
       position: relative;
       -webkit-box-flex: 0;

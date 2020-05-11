@@ -13,6 +13,9 @@ $wp_url = get_template_directory_uri(); ?>
 
 <body>
 
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v7.0"></script>
+
 <header class="header container bg-white">
 
 <h1 class="header__h1"><a href="<?php echo $home; ?>"><img src="<?php echo $wp_url; ?>/dist/images/logo.png" alt="<?php the_title(); ?>"></a></h1>

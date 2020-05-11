@@ -1,0 +1,151 @@
+.footer {
+  position: relative;
+  padding: 80px 0 60px;
+  background-color: $white;
+  @include media-breakpoint-down(md) {
+    padding: 60px 0 30px;
+  }
+  .totop {
+    position: absolute;
+    right: 2rem;
+    top: 5rem;
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: $success;
+    color: $white;
+    .fas {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 1.5rem;
+    }
+  }
+  &__links {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    @include media-breakpoint-down(md) {
+      display: block;
+    }
+    &__left {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: nowrap;
+      @include media-breakpoint-down(md) {
+        display: block;
+        text-align: center;
+      }
+      a {
+        display: block;
+        @include media-breakpoint-down(md) {
+          margin: 0 0 1rem;
+        }
+        &:nth-child(2) {
+          margin: 0 1rem;
+          @include media-breakpoint-down(md) {
+            margin: 0 0 1rem;
+          }
+        }
+      }
+    }
+    &__right {
+      @include media-breakpoint-down(md) {
+        text-align: center;
+      }
+    }
+  }
+  &__about {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-flow: row-reverse;
+    margin-top: 3rem;
+    @include media-breakpoint-down(md) {
+      display: block;
+    }
+    &__fb {
+      width: 40%;
+      @include media-breakpoint-down(md) {
+        width: 100%;
+      }
+    }
+    &__logo {
+      width: 55%;
+      @include media-breakpoint-down(md) {
+        width: 100%;
+        margin-top: 2rem;
+      }
+      &__inner {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 2rem;
+        @include media-breakpoint-down(md) {
+          display: block;
+          text-align: center;
+        }
+        p {
+          line-height: normal;
+          font-size: 13px;
+          margin: 0 0 0 2rem;
+          @include media-breakpoint-down(md) {
+            margin: 2rem 0 0;
+            text-align: left;
+          }
+        }
+      }
+      &__txt {
+        font-size: 13px;
+        line-height: normal;
+        color: #939393;
+        margin-bottom: 3rem;
+      }
+      &__link {
+        margin-bottom: 1rem;
+        a {
+          display: inline-block;
+          vertical-align: middle;
+          font-size: $font-size-sm;
+          color: $body-color;
+          box-sizing: border-box;
+          line-height: 1;
+          letter-spacing: normal;
+          &:first-child {
+            margin-right: 0.5em;
+            padding-right: 0.5em;
+            border-right: solid 1px #eee;
+          }
+        }
+      }
+      &__small {
+        font-size: 10px;
+        margin: 0;
+        color: #939393;
+      }
+    }
+  }
+}
+
+.fixed_btn {
+  z-index: 10;
+  position: fixed;
+  right: 1.5rem;
+  bottom: 1rem;
+  a {
+    display: block;
+    img {
+      max-width: 4vw;
+      height: auto;
+    }
+    &:first-child {
+      margin-bottom: 5px;
+    }
+  }
+}

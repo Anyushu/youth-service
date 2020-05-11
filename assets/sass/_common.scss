@@ -3,6 +3,10 @@ body {
   font-family: "Noto Sans JP", sans-serif;
 }
 
+main {
+  overflow: hidden;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -12,6 +16,9 @@ img {
 
 p {
   line-height: 1.7;
+  @include media-breakpoint-down(md) {
+    font-size: $font-size-sm;
+  }
 }
 
 a {
@@ -27,9 +34,16 @@ a {
   }
 }
 
+.quicksand {
+  font-family: "Quicksand", sans-serif;
+}
+
 .sec {
   position: relative;
   padding: 100px 0;
+  @include media-breakpoint-down(md) {
+    padding: 3rem 0;
+  }
 }
 
 .bg-grid {
@@ -66,5 +80,149 @@ a {
   &-success {
     border-color: #1f7349;
     color: $white;
+  }
+}
+
+.submenu {
+  background-color: $white;
+  padding: 2.5rem 0;
+  @include media-breakpoint-down(md) {
+    padding: 2rem 0;
+  }
+  &__list {
+    padding: 0;
+    margin: 0 0 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    @include media-breakpoint-down(md) {
+      margin: 0 0 2rem;
+      justify-content: space-between;
+    }
+    li {
+      list-style: none;
+      margin: 0 0.5rem;
+      @include media-breakpoint-down(md) {
+        margin: 1rem 0 0;
+        width: 49%;
+      }
+      &:nth-child(-n + 2) {
+        margin-top: 0;
+      }
+      a {
+        display: block;
+        background-color: #f2f9f5;
+        font-size: 1rem;
+        line-height: 1;
+        box-sizing: border-box;
+        padding: 1em 2em;
+        border-radius: 2em;
+        text-align: center;
+        color: $body-color;
+        font-weight: bold;
+        @include media-breakpoint-down(md) {
+          font-size: 12px;
+          padding: 1.5em;
+        }
+        .fas {
+          color: $success;
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+}
+
+.table-wrap {
+  overflow: hidden;
+  border: solid 3px $success;
+  border-radius: 0.5rem;
+  .table {
+    margin: 0;
+    tr {
+      th,
+      td {
+        border: 0;
+        border-bottom: dotted 1px #b3d5c3;
+        vertical-align: middle;
+        padding: 1.5em;
+      }
+      th {
+        width: 25%;
+        background-color: $success;
+        color: $white;
+      }
+      &:last-child {
+        th,
+        td {
+          border: 0;
+        }
+      }
+    }
+  }
+}
+
+.ttl {
+  &__h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 0 2em;
+    @include media-breakpoint-down(md) {
+      font-size: 1.6rem;
+    }
+    span {
+      &.quicksand {
+        display: block;
+        color: $success;
+        font-size: $font-size-sm;
+        text-transform: uppercase;
+      }
+      &:last-child {
+        position: relative;
+        &::before,
+        &::after {
+          position: absolute;
+          bottom: 0;
+          content: "";
+          display: inline-block;
+          width: 0.5rem;
+          height: 1.5em;
+          border-radius: 1em;
+          background-color: $success;
+          transform: rotate(40deg);
+          @include media-breakpoint-down(md) {
+            width: 0.25rem;
+          }
+        }
+        &::before {
+          left: -2em;
+          @include media-breakpoint-down(md) {
+            left: -1em;
+          }
+        }
+        &::after {
+          right: -2em;
+          @include media-breakpoint-down(md) {
+            right: -1em;
+          }
+        }
+      }
+    }
+    &.white {
+      color: $white;
+      span {
+        &.quicksand {
+          color: $white;
+        }
+        &:last-child {
+          &::before,
+          &::after {
+            background-color: $white;
+          }
+        }
+      }
+    }
   }
 }

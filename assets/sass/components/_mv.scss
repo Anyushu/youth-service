@@ -2,9 +2,18 @@
   &__sub {
     position: relative;
     font-size: 0;
+    background-color: $success;
+    @include media-breakpoint-down(md) {
+      height: 40vh;
+    }
     & > img {
       width: 100%;
       height: auto;
+      @include media-breakpoint-down(md) {
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+      }
     }
     &__ttl {
       position: absolute;
@@ -12,14 +21,23 @@
       box-sizing: border-box;
       text-align: center;
       padding: 0 1rem;
+      margin: 0;
       top: 45%;
       left: 0;
+      img {
+        @include media-breakpoint-down(md) {
+          max-height: 70px;
+        }
+      }
     }
     #breadcrumbs {
       position: absolute;
       left: 0;
       bottom: 10%;
       width: 100%;
+      @include media-breakpoint-down(md) {
+        bottom: 5%;
+      }
       a,
       span {
         color: $white !important;

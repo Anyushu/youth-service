@@ -180,9 +180,17 @@
         background-color: #22794d;
         color: $white;
         text-align: center;
+        @include media-breakpoint-down(md) {
+          width: 2rem;
+          height: 2rem;
+          line-height: 2rem;
+        }
         i {
           font-size: 1.5rem;
           line-height: 1;
+          @include media-breakpoint-down(md) {
+            font-size: 1rem;
+          }
         }
       }
       &__nextarrow {
@@ -200,9 +208,17 @@
         background-color: #22794d;
         color: $white;
         text-align: center;
+        @include media-breakpoint-down(md) {
+          width: 2rem;
+          height: 2rem;
+          line-height: 2rem;
+        }
         i {
           font-size: 1.5rem;
           line-height: 1;
+          @include media-breakpoint-down(md) {
+            font-size: 1rem;
+          }
         }
       }
     }

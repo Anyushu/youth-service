@@ -35,6 +35,24 @@ $(function ($) {
   });
 
   // slick
+  $(".voice__list").slick({
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    centerMode: true,
+    centerPadding: "20vw",
+    adaptiveHeight: true,
+    prevArrow: '<span class="home__camp__slide__prevarrow"><i class="fas fa-chevron-left"></i></span>',
+    nextArrow: '<span class="home__camp__slide__nextarrow"><i class="fas fa-chevron-right"></i></span>',
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          centerPadding: "0",
+        },
+      },
+    ],
+  });
   $(".home__camp__slide").slick({
     infinite: true,
     speed: 300,

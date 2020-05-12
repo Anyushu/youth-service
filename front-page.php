@@ -5,10 +5,10 @@ get_header(); ?>
 <div class="home__mv">
 <div class="container h-100">
 <div class="home__mv__copy">
-<p>
+<p class="text-center">
 <img class="w-100" src="<?php echo $wp_url; ?>/dist/images/mv_balloon_pc.png" alt="今しかできない" srcset="<?php echo $wp_url; ?>/dist/images/mv_balloon_pc.png 1x, <?php echo $wp_url; ?>/dist/images/mv_balloon_pc@2x.png 2x">
 </p>
-<p>
+<p class="text-center">
 <img class="w-100" src="<?php echo $wp_url; ?>/dist/images/mv_copy_pc.png" alt="今しかできない" srcset="<?php echo $wp_url; ?>/dist/images/mv_copy_pc.png 1x, <?php echo $wp_url; ?>/dist/images/mv_copy_pc@2x.png 2x">
 </p>
 <p class="mb-0 home__mv__copy__txt">ユースサービス大阪はキャンプやスキーなど
@@ -42,27 +42,25 @@ get_header(); ?>
 </div>
 <!-- mv -->
 <section class="sec home__read bg-success">
-<img src="<?php echo $wp_url; ?>/dist/images/bg_read_top.png" alt="背景">
 <div class="container">
 <div class="text-center">
 <a href="<?php echo $home; ?>/"><img class="img-switch" src="<?php echo $wp_url; ?>/dist/images/top_bnr_4_pc.png" alt="アウトドアリーダー募集"></a>
 </div>
 <div class="home__read__inner">
 <a href="<?php echo $home; ?>/">
-<img class="img-switch" src="<?php echo $wp_url; ?>/dist/images/top_bnr_1_pc.png" alt="アウトドアリーダー募集">
+<img src="<?php echo $wp_url; ?>/dist/images/top_bnr_1_pc.png" alt="アウトドアリーダー募集">
 <p class="mb-0">現在募集中のキャンプを表示しています！<br>また、こちらからお申し込みもできます。</p>
 </a>
 <a href="<?php echo $home; ?>/">
-<img class="img-switch" src="<?php echo $wp_url; ?>/dist/images/top_bnr_2_pc.png" alt="アウトドアリーダー募集">
+<img src="<?php echo $wp_url; ?>/dist/images/top_bnr_2_pc.png" alt="アウトドアリーダー募集">
 <p class="mb-0">「豊かな人間関係」を育む集団活動の機会を提供するプログラム</p>
 </a>
 <a href="<?php echo $home; ?>/">
-<img class="img-switch" src="<?php echo $wp_url; ?>/dist/images/top_bnr_3_pc.png" alt="アウトドアリーダー募集">
+<img src="<?php echo $wp_url; ?>/dist/images/top_bnr_3_pc.png" alt="アウトドアリーダー募集">
 <p class="mb-0">ユースサービス大阪が運営しているキャンプ施設をご案内いたします。</p>
 </a>
 </div>
 </div>
-<img src="<?php echo $wp_url; ?>/dist/images/bg_read_bottom.png" alt="背景">
 </section>
 <!-- home__read -->
 <section class="sec home__news bg-light">
@@ -199,7 +197,8 @@ get_header(); ?>
 <!-- home__news -->
 <section class="sec home__camp bg-success">
 <div class="container">
-<h2 class="text-center mb-5"><img src="<?php echo $wp_url; ?>/dist/images/ttl_camp_pc.png" alt=""></h2>
+<h2 class="text-center mb-4"><img src="<?php echo $wp_url; ?>/dist/images/ttl_camp_pc.png" alt=""></h2>
+<p class="text-white mb-5 text-center">新しいキャンプなどをどんどん企画し、<br>発信していきます。</p>
 </div>
 
 <div class="home__camp__slide">
@@ -550,7 +549,7 @@ get_header(); ?>
 <!-- home__gallery -->
 <section class="sec home__point">
 <div class="container">
-<h2 class="text-center mb-5"><img src="<?php echo $wp_url; ?>/dist/images/ttl_point_pc.png" alt=""></h2>
+<h2 class="text-center mb-5"><img class="switch-img" src="<?php echo $wp_url; ?>/dist/images/ttl_point_pc.png" alt=""></h2>
 <p class="text-center">ユースサービス大阪は、半世紀にわたり蓄積してきたノウハウと豊かな人材を活かし、<br>初めてキャンプに参加するお子さまに安心して参加頂くための取り組みを徹底しています。</p>
 <div class="home__point__list">
 <div class="home__point__list__inner">
@@ -580,7 +579,7 @@ get_header(); ?>
 <!-- home__point -->
 <section class="sec home__point2 bg-success">
 <div class="container">
-<h2 class="text-center mb-5"><img src="<?php echo $wp_url; ?>/dist/images/ttl_point2_pc.png" alt=""></h2>
+<h2 class="text-center mb-5"><img class="switch-img" src="<?php echo $wp_url; ?>/dist/images/ttl_point2_pc.png" alt=""></h2>
 <p class="text-center text-white">ユースサービス大阪は、楽しくグループ活動が体験できるように、数多くの特色ある事業を企画しています。</p>
 <div class="home__point2__list">
 <div class="home__point2__list__inner">

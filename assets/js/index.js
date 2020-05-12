@@ -10,11 +10,19 @@ $(function ($) {
   let md = 991.98;
 
   // リサイズ
-  $(window).on("resize", function () {
+  $(window).on("load resize", function () {
     if (w <= md) {
       $(".img-switch").each(function () {
         $(this).attr("src", $(this).attr("src").replace("_pc", "_sp"));
-        $(this).attr("srcset", $(this).attr("srcset").replace("_pc", "_sp"));
+        let srcset = $(this).attr("srcset");
+        if (srcset != null) {
+          let result = srcset.replace("_pc", "_sp");
+          while (result !== srcset) {
+            srcset = srcset.replace("_pc", "_sp");
+            result = result.replace("_pc", "_sp");
+          }
+          $(this).attr("srcset", result);
+        }
       });
     }
   });
@@ -87,6 +95,14 @@ $(function ($) {
     vertical: true,
     infinite: true,
     touchMove: false,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 4,
+        },
+      },
+    ],
   });
   $(".home__mv__slide--2").slick({
     arrows: false,
@@ -99,6 +115,14 @@ $(function ($) {
     vertical: true,
     infinite: true,
     touchMove: false,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 4,
+        },
+      },
+    ],
   });
   $(".home__mv__slide--3").slick({
     arrows: false,
@@ -111,6 +135,14 @@ $(function ($) {
     vertical: true,
     infinite: true,
     touchMove: false,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 4,
+        },
+      },
+    ],
   });
   $(".home__mv__slide--4").slick({
     arrows: false,
@@ -134,5 +166,13 @@ $(function ($) {
     slidesToScroll: 1,
     infinite: true,
     touchMove: false,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+    ],
   });
 });

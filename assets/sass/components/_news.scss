@@ -21,12 +21,18 @@
         overflow: hidden;
         width: 25%;
         border-radius: 0.5rem;
+        @include media-breakpoint-down(md) {
+          width: 30%;
+        }
         img {
           width: 100%;
         }
       }
       &__txt {
         width: 72%;
+        @include media-breakpoint-down(md) {
+          width: 65%;
+        }
         &__meta {
           span {
             display: inline-block;
@@ -35,15 +41,25 @@
             &.time {
               font-weight: bold;
               margin-right: 5px;
+              @include media-breakpoint-down(md) {
+                font-size: 12px;
+              }
             }
             &.cat {
               line-height: 1;
+              @include media-breakpoint-down(md) {
+                font-size: 12px;
+              }
               span {
                 background-color: $success;
                 color: $white;
                 box-sizing: border-box;
-                padding: 7px 7px;
+                padding: 7px;
                 margin: 0 2px;
+                @include media-breakpoint-down(md) {
+                  padding: 4px;
+                  font-size: 12px;
+                }
               }
               &::before,
               &::after {
@@ -52,12 +68,22 @@
                 vertical-align: middle;
                 border-top: $font-size-sm solid transparent;
                 border-bottom: $font-size-sm solid transparent;
+                @include media-breakpoint-down(md) {
+                  border-top: 10px solid transparent;
+                  border-bottom: 10px solid transparent;
+                }
               }
               &::before {
                 border-right: $font-size-sm solid $success;
+                @include media-breakpoint-down(md) {
+                  border-right: 10px solid $success;
+                }
               }
               &::after {
                 border-left: $font-size-sm solid $success;
+                @include media-breakpoint-down(md) {
+                  border-left: 10px solid $success;
+                }
               }
             }
           }
@@ -66,11 +92,18 @@
           font-size: 1.05rem;
           font-weight: bold;
           margin: 1rem 0;
+          @include media-breakpoint-down(md) {
+            font-size: $font-size-sm;
+            margin: 0.5rem 0 0;
+          }
         }
         p {
           margin: 0;
           font-size: $font-size-sm;
           color: #969696;
+          @include media-breakpoint-down(md) {
+            display: none;
+          }
         }
       }
     }

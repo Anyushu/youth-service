@@ -67,6 +67,9 @@ a {
   font-weight: bold;
   border: 0;
   border-bottom: solid 4px;
+  @include media-breakpoint-down(md) {
+    padding: 1.25em 3em;
+  }
   i {
     position: absolute;
     top: 50%;
@@ -289,4 +292,10 @@ a {
 
 .flex-none {
   display: block !important;
+}
+
+.slick-vertical .slick-slide {
+  @include media-breakpoint-down(md) {
+    margin: 0.25rem 0 !important;
+  }
 }

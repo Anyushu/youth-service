@@ -34,6 +34,20 @@ $(function ($) {
     return false;
   });
 
+  // menu
+  $(".outermenu--toggle").on("change", function () {
+    let check = $(this).prop("checked");
+    if (check) {
+      $(".outermenu__wrap").addClass("active");
+    } else {
+      $(".outermenu__wrap").removeClass("active");
+    }
+  });
+  $(".outermenu__wrap__inner__close").on("click", function () {
+    $(".outermenu__wrap").removeClass("active");
+    $(".outermenu--toggle").prop("checked", false);
+  });
+
   // slick
   $(".voice__list").slick({
     infinite: true,

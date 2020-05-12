@@ -49,8 +49,8 @@ $wp_url = get_template_directory_uri(); ?>
 </footer>
 
 <div class="fixed_btn">
-  <a href="https://www.facebook.com/yso.or.jp" target="_blank"><img src="<?php echo $wp_url; ?>/dist/images/btn_facebook.png" alt=""></a>
-  <a href="https://www.instagram.com/yso̲camp/" target="_blank"><img src="<?php echo $wp_url; ?>/dist/images/btn_instagram.png" alt=""></a>
+<a href="https://www.facebook.com/yso.or.jp" target="_blank"><img src="<?php echo $wp_url; ?>/dist/images/btn_facebook.png" alt=""></a>
+<a href="https://www.instagram.com/yso̲camp/" target="_blank"><img src="<?php echo $wp_url; ?>/dist/images/btn_instagram.png" alt=""></a>
 </div>
 
 <?php wp_footer(); ?>

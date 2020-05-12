@@ -81,6 +81,10 @@ a {
     border-color: #1f7349;
     color: $white;
   }
+  &-primary {
+    border-color: #0d5a86;
+    color: $white;
+  }
 }
 
 .submenu {
@@ -147,16 +151,43 @@ a {
         border-bottom: dotted 1px #b3d5c3;
         vertical-align: middle;
         padding: 1.5em;
+        @include media-breakpoint-down(md) {
+          padding: 1em;
+          font-size: $font-size-sm;
+        }
       }
       th {
         width: 25%;
         background-color: $success;
         color: $white;
+        @include media-breakpoint-down(md) {
+          width: auto;
+        }
       }
       &:last-child {
         th,
         td {
           border: 0;
+        }
+      }
+    }
+  }
+  &.about {
+    border: 0;
+    border-radius: 0;
+    .table {
+      tr {
+        th,
+        td {
+          border: 0;
+          background: none;
+          color: $body-color;
+        }
+        &:nth-child(odd) {
+          th,
+          td {
+            background-color: #f1f9f4;
+          }
         }
       }
     }
@@ -225,4 +256,28 @@ a {
       }
     }
   }
+  &__h3 {
+    font-size: 1.5rem;
+    box-sizing: border-box;
+    font-weight: bold;
+    padding-left: 0.5em;
+    margin-bottom: 1.5em;
+    @include media-breakpoint-down(md) {
+      font-size: 1.25rem;
+    }
+    &::before {
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      width: 0.2em;
+      height: 1.5em;
+      border-radius: 2em;
+      background-color: $success;
+      margin-right: 0.5em;
+    }
+  }
+}
+
+.flex-none {
+  display: block !important;
 }

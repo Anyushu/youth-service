@@ -194,11 +194,11 @@ if ($camp_status !== '終了') {
 <div class="camplist__post__btns">
 <div class="mr-md-4 mb-md-0 mb-4">
 <p class="text-center small mb-2">ホームページからお申込みの方</p>
-<a class="btn btn-secondary" href="<?php $home; ?>/">参加申込フォームへ<i class="fas fa-play-circle"></i></a>
+<a class="btn btn-secondary" href="#form">参加申込フォームへ<i class="fas fa-play-circle"></i></a>
 </div>
 <div>
 <p class="text-center small mb-2">FAX送信でお申し込みの方</p>
-<a class="btn btn-primary" href="<?php $home; ?>/" target="_blank">FAX用紙の印刷へ<i class="fas fa-play-circle"></i></a>
+<a class="btn btn-primary" href="<?php $home; ?>/pdf/jigyo-mail.pdf" target="_blank">FAX用紙の印刷へ<i class="fas fa-play-circle"></i></a>
 </div>
 </div>
 <!-- camplist__post__btns -->
@@ -209,8 +209,8 @@ if ($camp_status !== '終了') {
 
 </div>
 </section>
-
-<section class="sec ol__form bg-success camplist__form">
+<?php if ($camp_status == '受付中' || $camp_status == '残りわずか'): ?>
+<section id="form" class="sec ol__form bg-success camplist__form">
 <div class="container">
 <h2 class="ttl__h2">
 <span class="quicksand">ENTRY FORM</span>
@@ -234,6 +234,6 @@ if ($camp_status !== '終了') {
 </div>
 </section>
 <!-- ol__form -->
-
+<?php endif; ?>
 <?php endwhile; endif; ?>
 <?php get_footer();

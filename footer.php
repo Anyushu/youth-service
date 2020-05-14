@@ -11,13 +11,13 @@ $wp_url = get_template_directory_uri(); ?>
 <div class="container">
 <div class="footer__links">
 <div class="footer__links__left">
-<a href="">
+<a href="<?php echo $home; ?>/about/">
 <img src="<?php echo $wp_url; ?>/dist/images/btn_about.png" alt="">
 </a>
-<a href="">
+<a href="<?php echo $home; ?>/recruit/">
 <img src="<?php echo $wp_url; ?>/dist/images/btn_recruit.png" alt="">
 </a>
-<a href="">
+<a href="<?php echo $home; ?>/status/login/">
 <img src="<?php echo $wp_url; ?>/dist/images/btn_payment.png" alt="">
 </a>
 </div>
@@ -39,8 +39,8 @@ $wp_url = get_template_directory_uri(); ?>
 </div>
 <p class="footer__about__logo__txt">ユースサービス大阪は、大阪府の出捐により1956年に事業を開始した⻘少年活動の専門団体です。自然体験活動を通して子どもたちが自主性を発揮し、コミュニケーション能力などの「生きる力」を育む「成⻑とふれあい」の機会を提供する非営利型の一般財団法人です。事業運営には専門スタッフの指導のもと、⻘少年育成に関する研修を積んだ大学生のボランティアリーダーが少人数グループ毎に子どもたちを見守り、安全にプログラムを進めますので、キャンプ等が初めてのお子さまでも安心してご参加いただけます。</p>
 <div class="footer__about__logo__link">
-<a href="">標識・旅行条件書他</a>
-<a href="">プライバシーポリシー</a>
+<a href="<?php echo $home; ?>/pdf/condition.pdf">標識・旅行条件書他</a>
+<a href="<?php echo $home; ?>/privacy-policy/">プライバシーポリシー</a>
 </div>
 <p class="footer__about__logo__small">© 2020 YOUTH SERVICE OSAKA</p>
 </div>

@@ -184,12 +184,12 @@ yoast_breadcrumb('<div id="breadcrumbs"><div class="container">', '</div></div>'
 <span>提出先・お問い合わせ先</span>
 </h2>
 <div class="entry__contact">
-<p>一般財団法人大阪府青少年活動財団 経営企画部　（担当：三枝）
-<br>〒556-0021 大阪市浪速区幸町2丁目7－3 りそな・アルテ桜川ビル4階 <a href="" target="_blank">Google Mapで見る</a></p>
+<p>一般財団法人大阪府青少年活動財団 経営企画部（担当：三枝）
+<br>〒556-0021 大阪市浪速区幸町2丁目7－3 りそな・アルテ桜川ビル4階 <a href="https://goo.gl/maps/5d7y7g85jbZhK1cG8" target="_blank">Google Mapで見る</a></p>
 <p class="entry__contact__tel"><a href="tel:0665617676"><img src="<?php echo $wp_url; ?>/dist/images/recruit_tel.png" alt="電話"></a></p>
 <div class="entry__contact__link">
 <div class="entry__contact__link__left"><img src="<?php echo $wp_url; ?>/dist/images/icon_fax.png" alt="FAX"><span>06-6561-7801</span></div>
-<div class="entry__contact__link__right"><img src="<?php echo $wp_url; ?>/dist/images/icon_mail.png" alt="mail"><a class="more-txt" href="mailto:">一覧を見る<i class="fas fa-play-circle text-success ml-1"></i></a></div>
+<div class="entry__contact__link__right"><img src="<?php echo $wp_url; ?>/dist/images/icon_mail.png" alt="mail"><a class="more-txt" href="mailto:soumu@yso.or.jp">メールをする<i class="fas fa-play-circle text-success ml-1"></i></a></div>
 </div>
 </div>
 <!-- entry__contact -->

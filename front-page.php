@@ -44,19 +44,19 @@ get_header(); ?>
 <section class="sec home__read bg-success">
 <div class="container">
 <div class="text-center">
-<a href="<?php echo $home; ?>/"><img class="img-switch" src="<?php echo $wp_url; ?>/dist/images/top_bnr_4_pc.png" alt="アウトドアリーダー募集"></a>
+<a href="<?php echo $home; ?>/leader/"><img class="img-switch" src="<?php echo $wp_url; ?>/dist/images/top_bnr_4_pc.png" alt="アウトドアリーダー募集"></a>
 </div>
 <div class="home__read__inner">
-<a href="<?php echo $home; ?>/">
-<img src="<?php echo $wp_url; ?>/dist/images/top_bnr_1_pc.png" alt="アウトドアリーダー募集">
+<a href="<?php echo $home; ?>/camplist/">
+<img src="<?php echo $wp_url; ?>/dist/images/top_bnr_1_pc.png" alt="キャンプ">
 <p class="mb-0">現在募集中のキャンプを表示しています！<br>また、こちらからお申し込みもできます。</p>
 </a>
-<a href="<?php echo $home; ?>/">
-<img src="<?php echo $wp_url; ?>/dist/images/top_bnr_2_pc.png" alt="アウトドアリーダー募集">
+<a href="<?php echo $home; ?>/program/">
+<img src="<?php echo $wp_url; ?>/dist/images/top_bnr_2_pc.png" alt="Program">
 <p class="mb-0">「豊かな人間関係」を育む集団活動の機会を提供するプログラム</p>
 </a>
-<a href="<?php echo $home; ?>/">
-<img src="<?php echo $wp_url; ?>/dist/images/top_bnr_3_pc.png" alt="アウトドアリーダー募集">
+<a href="<?php echo $home; ?>/facility/">
+<img src="<?php echo $wp_url; ?>/dist/images/top_bnr_3_pc.png" alt="施設">
 <p class="mb-0">ユースサービス大阪が運営しているキャンプ施設をご案内いたします。</p>
 </a>
 </div>
@@ -70,118 +70,40 @@ get_header(); ?>
 <a class="more-txt" href="<?php echo $home; ?>/news/">一覧を見る<i class="fas fa-play-circle text-success ml-1"></i></a>
 <h2 class="home__news__wrap__list__ttl"><span><img src="<?php echo $wp_url; ?>/dist/images/ttl_news_pc.png" alt=""></span></h2>
 <ul class="news__list">
+<?php
+$args = [
+    'posts_per_page' => 10,
+    'post_type' => 'post',
+    'orderby' => 'date',
+    'order' => 'DESC'
+];
+$posts = get_posts($args);
+foreach ($posts as $post): setup_postdata($post);
+$id = get_the_ID();
+if (has_post_thumbnail()) {
+    $thumbnail = get_the_post_thumbnail_url(get_the_ID(), 'large');
+}
+$t = get_the_title();
+$p = get_the_permalink();
+$categories = get_the_category();
+$cat_name = $categories[0]->name;
+?>
 <li class="news__list__inner">
-<a href="">
+<a href="<?php echo $p; ?>">
 <div class="news__list__inner__img">
-<img src="<?php echo $wp_url; ?>/dist/images/sample_img.png" alt="">
+<img src="<?php echo $thumbnail; ?>" alt="<?php echo $t; ?>">
 </div>
 <div class="news__list__inner__txt">
 <div class="news__list__inner__txt__meta">
-<span class="time">2020.04.25</span>
-<span class="cat"><span>お知らせ</span></span>
+<span class="time"><?php the_time('Y.m.d'); ?></span>
+<span class="cat"><span><?php echo $cat_name; ?></span></span>
 </div>
-<h3>ゴールデンウィークのキャンプ情報を更新しました！</h3>
-<p>ユースサービス大阪はキャンプやスキーなど子ども達のたくさんの笑顔に出会える楽しいプランを提供し、こころ豊かで健やかな成⻑を⽀援しています。</p>
-</div>
-</a>
-</li>
-<!-- news__list__inner -->
-<li class="news__list__inner">
-<a href="">
-<div class="news__list__inner__img">
-<img src="<?php echo $wp_url; ?>/dist/images/sample_img.png" alt="">
-</div>
-<div class="news__list__inner__txt">
-<div class="news__list__inner__txt__meta">
-<span class="time">2020.04.25</span>
-<span class="cat"><span>お知らせ</span></span>
-</div>
-<h3>ゴールデンウィークのキャンプ情報を更新しました！</h3>
-<p>ユースサービス大阪はキャンプやスキーなど子ども達のたくさんの笑顔に出会える楽しいプランを提供し、こころ豊かで健やかな成⻑を⽀援しています。</p>
+<h3><?php echo $t; ?></h3>
+<p><?php the_excerpt(); ?></p>
 </div>
 </a>
 </li>
-<!-- news__list__inner -->
-<li class="news__list__inner">
-<a href="">
-<div class="news__list__inner__img">
-<img src="<?php echo $wp_url; ?>/dist/images/sample_img.png" alt="">
-</div>
-<div class="news__list__inner__txt">
-<div class="news__list__inner__txt__meta">
-<span class="time">2020.04.25</span>
-<span class="cat"><span>お知らせ</span></span>
-</div>
-<h3>ゴールデンウィークのキャンプ情報を更新しました！</h3>
-<p>ユースサービス大阪はキャンプやスキーなど子ども達のたくさんの笑顔に出会える楽しいプランを提供し、こころ豊かで健やかな成⻑を⽀援しています。</p>
-</div>
-</a>
-</li>
-<!-- news__list__inner -->
-<li class="news__list__inner">
-<a href="">
-<div class="news__list__inner__img">
-<img src="<?php echo $wp_url; ?>/dist/images/sample_img.png" alt="">
-</div>
-<div class="news__list__inner__txt">
-<div class="news__list__inner__txt__meta">
-<span class="time">2020.04.25</span>
-<span class="cat"><span>お知らせ</span></span>
-</div>
-<h3>ゴールデンウィークのキャンプ情報を更新しました！</h3>
-<p>ユースサービス大阪はキャンプやスキーなど子ども達のたくさんの笑顔に出会える楽しいプランを提供し、こころ豊かで健やかな成⻑を⽀援しています。</p>
-</div>
-</a>
-</li>
-<!-- news__list__inner -->
-<li class="news__list__inner">
-<a href="">
-<div class="news__list__inner__img">
-<img src="<?php echo $wp_url; ?>/dist/images/sample_img.png" alt="">
-</div>
-<div class="news__list__inner__txt">
-<div class="news__list__inner__txt__meta">
-<span class="time">2020.04.25</span>
-<span class="cat"><span>お知らせ</span></span>
-</div>
-<h3>ゴールデンウィークのキャンプ情報を更新しました！</h3>
-<p>ユースサービス大阪はキャンプやスキーなど子ども達のたくさんの笑顔に出会える楽しいプランを提供し、こころ豊かで健やかな成⻑を⽀援しています。</p>
-</div>
-</a>
-</li>
-<!-- news__list__inner -->
-<li class="news__list__inner">
-<a href="">
-<div class="news__list__inner__img">
-<img src="<?php echo $wp_url; ?>/dist/images/sample_img.png" alt="">
-</div>
-<div class="news__list__inner__txt">
-<div class="news__list__inner__txt__meta">
-<span class="time">2020.04.25</span>
-<span class="cat"><span>お知らせ</span></span>
-</div>
-<h3>ゴールデンウィークのキャンプ情報を更新しました！</h3>
-<p>ユースサービス大阪はキャンプやスキーなど子ども達のたくさんの笑顔に出会える楽しいプランを提供し、こころ豊かで健やかな成⻑を⽀援しています。</p>
-</div>
-</a>
-</li>
-<!-- news__list__inner -->
-<li class="news__list__inner">
-<a href="">
-<div class="news__list__inner__img">
-<img src="<?php echo $wp_url; ?>/dist/images/sample_img.png" alt="">
-</div>
-<div class="news__list__inner__txt">
-<div class="news__list__inner__txt__meta">
-<span class="time">2020.04.25</span>
-<span class="cat"><span>お知らせ</span></span>
-</div>
-<h3>ゴールデンウィークのキャンプ情報を更新しました！</h3>
-<p>ユースサービス大阪はキャンプやスキーなど子ども達のたくさんの笑顔に出会える楽しいプランを提供し、こころ豊かで健やかな成⻑を⽀援しています。</p>
-</div>
-</a>
-</li>
-<!-- news__list__inner -->
+<?php endforeach; wp_reset_postdata(); ?>
 </ul>
 <!-- news__list -->
 </div>
@@ -205,7 +127,7 @@ get_header(); ?>
 <?php endfor; ?>
 </div>
 <div class="home__camp__btn">
-<a class="btn btn-success" href="">写真ギャラリーはこちら<i class="fas fa-play-circle"></i></a>
+<a class="btn btn-success" href="<?php echo $home; ?>/gallery/">写真ギャラリーはこちら<i class="fas fa-play-circle"></i></a>
 </div>
 </div>
 <!-- home__gallery -->
@@ -234,7 +156,7 @@ get_header(); ?>
 <!-- home__point__list -->
 <p class="home__point__caution">※帯同無しのキャンプもございます。</p>
 <div class="home__camp__btn">
-<a class="btn btn-success" href="">アウトドアリーダーとは<i class="fas fa-play-circle"></i></a>
+<a class="btn btn-success" href="<?php echo $home; ?>/leader/">アウトドアリーダーとは<i class="fas fa-play-circle"></i></a>
 </div>
 </div>
 </section>
@@ -261,12 +183,12 @@ get_header(); ?>
 <div class="container">
 <div class="home__program__list">
 <div class="home__program__list__inner">
-<a href="">
+<a href="<?php echo $home; ?>/program/">
 <img class="img-switch" src="<?php echo $wp_url; ?>/dist/images/program_pc.png" alt="" srcset="<?php echo $wp_url; ?>/dist/images/program_pc.png 1x, <?php echo $wp_url; ?>/dist/images/program_pc@2x.png 2x">
 </a>
 </div>
 <div class="home__program__list__inner">
-<a href="">
+<a href="<?php echo $home; ?>/facility/">
 <img class="img-switch" src="<?php echo $wp_url; ?>/dist/images/information_pc.png" alt="" srcset="<?php echo $wp_url; ?>/dist/images/information_pc.png 1x, <?php echo $wp_url; ?>/dist/images/information_pc@2x.png 2x">
 </a>
 </div>

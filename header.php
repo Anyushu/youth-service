@@ -44,7 +44,7 @@ $wp_url = get_template_directory_uri(); ?>
 <div class="outermenu__wrap__inner__close"><img src="<?php echo $wp_url; ?>/dist/images/bnt_close.png" alt="" srcset="<?php echo $wp_url; ?>/dist/images/bnt_close.png 1x, <?php echo $wp_url; ?>/dist/images/bnt_close@2x.png 2x"></div>
 <!-- outermenu__wrap__inner__close -->
 <div class="outermenu__wrap__inner__logo">
-<a href="<?php echo $home; ?>/"><img src="<?php echo $wp_url; ?>/dist/images/logo_white.png" alt=""></a>
+<a href="<?php echo $home; ?>/"><img src="<?php echo $wp_url; ?>/dist/images/logo_white.png" alt="<?php the_title(); ?>"></a>
 </div>
 <div class="outermenu__wrap__inner__box">
 <div class="outermenu__wrap__inner__box__list">
@@ -71,8 +71,8 @@ $wp_url = get_template_directory_uri(); ?>
 <!-- outermenu__wrap__inner__box__links -->
 <div class="outermenu__wrap__inner__box__bottom">
 <div class="footer__about__logo__link">
-<a href="">標識・旅行条件書他</a>
-<a href="">プライバシーポリシー</a>
+<a href="<?php echo $home; ?>/pdf/condition.pdf">標識・旅行条件書他</a>
+<a href="<?php echo $home; ?>/privacy-policy/">プライバシーポリシー</a>
 </div>
 <a href="tel:0665617800"><img src="<?php echo $wp_url; ?>/dist/images/btn_tel.png" alt="電話"></a>
 </div>

@@ -54,12 +54,19 @@ $wp_url = get_template_directory_uri(); ?>
 </div>
 <!-- outermenu__wrap__inner__box__list -->
 <div class="outermenu__wrap__inner__box__links">
-<a href="<?php echo $home; ?>/beginner/"><i class="fas fa-chevron-circle-right text-success mr-2"></i>はじめての方へ</a>
-<a href="<?php echo $home; ?>/gallery/"><i class="fas fa-chevron-circle-right text-success mr-2"></i>写真ギャラリー</a>
-<a href="<?php echo $home; ?>/status/login/"><i class="fas fa-chevron-circle-right text-success mr-2"></i>ご入金・参加カード提出確認</a>
-<a href="<?php echo $home; ?>/news/"><i class="fas fa-chevron-circle-right text-success mr-2"></i>新着情報</a>
-<a href="<?php echo $home; ?>/about/"><i class="fas fa-chevron-circle-right text-success mr-2"></i>団体概要</a>
-<a href="<?php echo $home; ?>/recruit/"><i class="fas fa-chevron-circle-right text-success mr-2"></i>採用情報</a>
+<a class="d-md-block d-none" href="<?php echo $home; ?>/beginner/"><i class="fas fa-chevron-circle-right text-success mr-2"></i>はじめての方へ</a>
+<a class="d-md-block d-none" href="<?php echo $home; ?>/gallery/"><i class="fas fa-chevron-circle-right text-success mr-2"></i>写真ギャラリー</a>
+<a class="d-md-block d-none" href="<?php echo $home; ?>/status/login/"><i class="fas fa-chevron-circle-right text-success mr-2"></i>ご入金・参加カード提出確認</a>
+<a class="d-md-block d-none" href="<?php echo $home; ?>/news/"><i class="fas fa-chevron-circle-right text-success mr-2"></i>新着情報</a>
+<a class="d-md-block d-none" href="<?php echo $home; ?>/about/"><i class="fas fa-chevron-circle-right text-success mr-2"></i>団体概要</a>
+<a class="d-md-block d-none" href="<?php echo $home; ?>/recruit/"><i class="fas fa-chevron-circle-right text-success mr-2"></i>採用情報</a>
+
+<a class="d-md-none" href="<?php echo $home; ?>/beginner/"><i class="fas fa-chevron-circle-right text-success mr-2"></i>はじめての方へ</a>
+<a class="d-md-none" href="<?php echo $home; ?>/news/"><i class="fas fa-chevron-circle-right text-success mr-2"></i>新着情報</a>
+<a class="d-md-none" href="<?php echo $home; ?>/gallery/"><i class="fas fa-chevron-circle-right text-success mr-2"></i>写真ギャラリー</a>
+<a class="d-md-none" href="<?php echo $home; ?>/about/"><i class="fas fa-chevron-circle-right text-success mr-2"></i>団体概要</a>
+<a class="d-md-none" href="<?php echo $home; ?>/status/login/"><i class="fas fa-chevron-circle-right text-success mr-2"></i>ご入金・参加カード提出確認</a>
+<a class="d-md-none" href="<?php echo $home; ?>/recruit/"><i class="fas fa-chevron-circle-right text-success mr-2"></i>採用情報</a>
 </div>
 <!-- outermenu__wrap__inner__box__links -->
 <div class="outermenu__wrap__inner__box__bottom">

@@ -228,6 +228,18 @@
                 font-weight: bold;
                 color: $body-color;
               }
+              &.fax {
+                margin-top: 1rem;
+                @include media-breakpoint-up(md) {
+                  text-align: right;
+                }
+                img {
+                  width: 3rem;
+                }
+                span {
+                  font-size: 1.5rem;
+                }
+              }
             }
           }
           &:first-of-type {
@@ -281,6 +293,150 @@
       @include media-breakpoint-down(md) {
         margin-right: 0;
         margin-bottom: 1rem;
+      }
+    }
+  }
+  &__post {
+    &__status {
+      display: inline-block;
+      vertical-align: baseline;
+      box-sizing: border-box;
+      border-radius: 0.3rem;
+      padding: 0.5rem 1rem;
+      line-height: 1;
+      font-weight: bold;
+      img {
+        display: inline-block;
+        vertical-align: bottom;
+        margin-right: 5px;
+        width: 1rem;
+        font-size: 0;
+      }
+    }
+    &__ttl {
+      font-size: 1.8rem;
+      font-weight: bold;
+      margin: 1.5rem 0;
+    }
+    &__days {
+      span {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 13px;
+        margin-right: 1rem;
+        line-height: 1;
+        img {
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 5px;
+        }
+      }
+    }
+    &__ex {
+      margin: 3rem 0 5rem;
+    }
+    &__ssl {
+      background-color: #f9f9f9;
+      box-sizing: border-box;
+      border-radius: 0.5rem;
+      padding: 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 4rem 0;
+      @include media-breakpoint-down(md) {
+        display: block;
+        margin: 2rem 0;
+      }
+      p {
+        width: 70%;
+        margin: 0;
+        @include media-breakpoint-down(md) {
+          width: 100%;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+    &__btns {
+      display: flex;
+      justify-content: center;
+      @include media-breakpoint-down(md) {
+        display: block;
+        text-align: center;
+      }
+    }
+    &__prev {
+      text-align: center;
+      margin-top: 4rem;
+      @include media-breakpoint-down(md) {
+        margin-top: 2rem;
+      }
+    }
+  }
+  &__form {
+    .form-list-more {
+      position: relative;
+      cursor: pointer;
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-align: center;
+      margin: 2rem 0 3rem;
+      background-color: #eee;
+      border: dotted 2px #bfbfbf;
+      line-height: 1;
+      box-sizing: border-box;
+      padding: 1em;
+      border-radius: 0.3rem;
+      &::after {
+        content: "＋";
+        margin-left: 1rem;
+      }
+    }
+    .beginner__faq__list__inner {
+      border: solid 1px #dcdcdc;
+      border-radius: 0;
+      @include media-breakpoint-down(md) {
+        margin-bottom: 1.5rem;
+      }
+      &__ttl {
+        border-radius: 0 !important;
+        & > span {
+          font-size: 1.2rem;
+          padding-left: 0;
+          text-align: center;
+        }
+      }
+      &__ttl__btn {
+        background-color: $success;
+      }
+      &__ans {
+        @include media-breakpoint-down(md) {
+          padding: .5rem;
+        }
+      }
+    }
+    .wpcf7-form-control-wrap {
+      display: block;
+    }
+    .wpcf7-checkbox,
+    .wpcf7-radio {
+      box-sizing: border-box;
+      padding: 0 0 0 1rem;
+    }
+    span.wpcf7-list-item {
+      display: block;
+      margin: 0 0 0.5rem;
+    }
+    .sex,
+    .sex-2,
+    .sex-3,
+    .sex-4,
+    .sex-5,
+    .sex-6 {
+      span.wpcf7-list-item {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 0.5rem 0 0;
       }
     }
   }

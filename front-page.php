@@ -211,7 +211,7 @@ get_header(); ?>
 <!-- home__gallery -->
 <section class="sec home__point">
 <div class="container">
-<h2 class="text-center mb-5"><img class="switch-img" src="<?php echo $wp_url; ?>/dist/images/ttl_point_pc.png" alt=""></h2>
+<h2 class="text-center mb-5"><img class="img-switch" src="<?php echo $wp_url; ?>/dist/images/ttl_point_pc.png" alt=""></h2>
 <p class="text-center">ユースサービス大阪は、半世紀にわたり蓄積してきたノウハウと豊かな人材を活かし、<br>初めてキャンプに参加するお子さまに安心して参加頂くための取り組みを徹底しています。</p>
 <div class="home__point__list">
 <div class="home__point__list__inner">
@@ -241,8 +241,8 @@ get_header(); ?>
 <!-- home__point -->
 <section class="sec home__point2 bg-success">
 <div class="container">
-<h2 class="text-center mb-5"><img class="switch-img" src="<?php echo $wp_url; ?>/dist/images/ttl_point2_pc.png" alt=""></h2>
-<p class="text-center text-white">ユースサービス大阪は、楽しくグループ活動が体験できるように、数多くの特色ある事業を企画しています。</p>
+<h2 class="text-center mb-5"><img class="img-switch" src="<?php echo $wp_url; ?>/dist/images/ttl_point2_pc.png" alt=""></h2>
+<p class="text-center text-white">ユースサービス大阪は、<br class="d-md-none">楽しくグループ活動が体験できるように、<br class="d-md-none">数多くの特色ある事業を企画しています。</p>
 <div class="home__point2__list">
 <div class="home__point2__list__inner">
 <img src="<?php echo $wp_url; ?>/dist/images/point2_1_pc.png" srcset="<?php echo $wp_url; ?>/dist/images/point2_1_pc.png 1x, <?php echo $wp_url; ?>/dist/images/point2_1_pc@2x.png 2x" alt="">
@@ -262,16 +262,16 @@ get_header(); ?>
 <div class="home__program__list">
 <div class="home__program__list__inner">
 <a href="">
-<img src="<?php echo $wp_url; ?>/dist/images/program_pc.png" alt="" srcset="<?php echo $wp_url; ?>/dist/images/program_pc.png 1x, <?php echo $wp_url; ?>/dist/images/program_pc@2x.png 2x">
+<img class="img-switch" src="<?php echo $wp_url; ?>/dist/images/program_pc.png" alt="" srcset="<?php echo $wp_url; ?>/dist/images/program_pc.png 1x, <?php echo $wp_url; ?>/dist/images/program_pc@2x.png 2x">
 </a>
 </div>
 <div class="home__program__list__inner">
 <a href="">
-<img src="<?php echo $wp_url; ?>/dist/images/information_pc.png" alt="" srcset="<?php echo $wp_url; ?>/dist/images/information_pc.png 1x, <?php echo $wp_url; ?>/dist/images/information_pc@2x.png 2x">
+<img class="img-switch" src="<?php echo $wp_url; ?>/dist/images/information_pc.png" alt="" srcset="<?php echo $wp_url; ?>/dist/images/information_pc.png 1x, <?php echo $wp_url; ?>/dist/images/information_pc@2x.png 2x">
 </a>
 </div>
 </div>
-<p class="text-center mb-0"><img src="<?php echo $wp_url; ?>/dist/images/agree_pc.png" alt="" srcset="<?php echo $wp_url; ?>/dist/images/agree_pc.png 1x, <?php echo $wp_url; ?>/dist/images/agree_pc@2x.png 2x"></p>
+<p class="text-center mb-0"><img class="img-switch" src="<?php echo $wp_url; ?>/dist/images/agree_pc.png" alt="" srcset="<?php echo $wp_url; ?>/dist/images/agree_pc.png 1x, <?php echo $wp_url; ?>/dist/images/agree_pc@2x.png 2x"></p>
 </div>
 </section>
 <?php get_footer();

@@ -166,12 +166,19 @@
       align-items: center;
       -webkit-box-pack: center;
       justify-content: center;
+      @include media-breakpoint-down(md) {
+        width: 400vw;
+        height: 400vw;
+      }
       & > div {
         max-height: 100vh;
         opacity: 0;
         -webkit-transition: opacity 0.4s ease;
         transition: opacity 0.4s ease;
         overflow-y: auto;
+        @include media-breakpoint-down(md) {
+          width: 97vw;
+        }
       }
       &__close {
         position: absolute;
@@ -179,6 +186,10 @@
         height: 70px;
         top: 1rem;
         right: 0;
+        @include media-breakpoint-down(md) {
+          width: 3rem;
+          height: 3rem;
+        }
         cursor: pointer;
         img {
           width: 100%;
@@ -187,6 +198,15 @@
       &__logo {
         text-align: center;
         margin: 1.5rem 0 3rem;
+        @include media-breakpoint-down(md) {
+          margin: 1rem 0 2rem;
+          text-align: left;
+        }
+        img {
+          @include media-breakpoint-down(md) {
+            max-width: 60vw;
+          }
+        }
       }
       &__box {
         background-color: $white;
@@ -197,6 +217,9 @@
           justify-content: center;
           align-items: stretch;
           flex-wrap: wrap;
+          @include media-breakpoint-down(md) {
+            display: block;
+          }
           a {
             display: block;
             width: 33.333333%;
@@ -205,6 +228,10 @@
             padding: 3rem 0;
             box-sizing: border-box;
             border-bottom: solid 1px #eee;
+            @include media-breakpoint-down(md) {
+              width: 100%;
+              padding: 1rem;
+            }
             img {
               height: 38px;
               width: auto;
@@ -214,6 +241,9 @@
               font-weight: bold;
               display: block;
               margin-top: 0.5rem;
+              @include media-breakpoint-down(md) {
+                font-size: $font-size-sm;
+              }
             }
             &:nth-child(2) {
               @include media-breakpoint-up(md) {
@@ -231,6 +261,10 @@
           justify-content: space-between;
           align-items: center;
           flex-wrap: wrap;
+          @include media-breakpoint-down(md) {
+            padding: 1rem;
+            margin: 1rem 0;
+          }
           a {
             display: block;
             width: 33.333333%;
@@ -238,6 +272,12 @@
             padding: 1.5rem 0;
             color: $body-color;
             font-weight: bold;
+            @include media-breakpoint-down(md) {
+              width: auto;
+              min-width: 32%;
+              padding: 0.5rem 0;
+              font-size: 12px;
+            }
           }
         }
         &__bottom {
@@ -247,6 +287,25 @@
           flex-wrap: nowrap;
           padding: 0 3rem 1.5rem;
           margin-top: 3rem;
+          @include media-breakpoint-down(md) {
+            padding: 0 1rem 1.5rem;
+            margin-top: 0rem;
+          }
+          .footer__about__logo__link {
+            @include media-breakpoint-down(md) {
+              margin: 0;
+            }
+            a {
+              @include media-breakpoint-down(md) {
+                font-size: 10px;
+              }
+            }
+          }
+          & > a {
+            @include media-breakpoint-down(md) {
+              display: none;
+            }
+          }
         }
       }
     }

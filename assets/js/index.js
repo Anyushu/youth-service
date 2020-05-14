@@ -24,6 +24,14 @@ $(function ($) {
           $(this).attr("srcset", result);
         }
       });
+      $(".home__point2__list").slick({
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        centerMode: true,
+        centerPadding: "5vw",
+        arrows: false,
+      });
     }
   });
 
@@ -248,5 +256,17 @@ $(function ($) {
     if ($(".more-list .beginner__faq__list__inner.is-hidden").length == 0) {
       $(".more").fadeOut();
     }
+  });
+  let moreNum_2 = 1;
+  $(".form-list .beginner__faq__list__inner:nth-child(n + " + (moreNum_2 + 1) + ")").addClass("is-hidden");
+  $(".form-list-more").on("click", function () {
+    $(".form-list .beginner__faq__list__inner.is-hidden").slice(0, moreNum_2).removeClass("is-hidden");
+    if ($(".form-list .beginner__faq__list__inner.is-hidden").length == 0) {
+      $(".form-list-more").fadeOut();
+    }
+  });
+
+  $('[data-dismiss="modal"]').on("click", function () {
+    $(".modal").modal("hide");
   });
 });

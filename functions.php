@@ -109,13 +109,8 @@ add_action('wp_enqueue_scripts', 'twpp_enqueue_styles');
 // JSの管理
 function add_my_scripts()
 {
-    wp_enqueue_script(
-        'base-script',
-        get_template_directory_uri().'/dist/js/bundle.js',
-        [],
-        '1.0.０',
-        true
-    );
+    wp_enqueue_script('base-script', get_template_directory_uri().'/dist/js/bundle.js', [], '1.0.０', true);
+    wp_enqueue_script('ajaxzip3', 'https://ajaxzip3.github.io/ajaxzip3.js', array('jquery'), '', true);
 }
 add_action('wp_enqueue_scripts', 'add_my_scripts');
 

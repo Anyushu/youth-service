@@ -113,13 +113,16 @@
       align-items: baseline;
       flex-wrap: wrap;
       margin-top: 2rem;
+      @include media-breakpoint-down(md) {
+        margin-top: 0;
+      }
       a {
         display: block;
         width: 32%;
         text-align: center;
         @include media-breakpoint-down(md) {
           width: 100%;
-          margin-top: 2rem;
+          margin-top: 2rem !important;
         }
         &:nth-child(2) {
           margin: 0 2%;
@@ -136,6 +139,10 @@
           text-align: left;
           color: $white;
           margin-top: 1rem;
+          @include media-breakpoint-down(md) {
+            font-size: 12px;
+            margin-top: 1em;
+          }
         }
       }
     }
@@ -214,6 +221,10 @@
   &__camp {
     padding-top: 0;
     padding-bottom: 140px;
+    @include media-breakpoint-down(md) {
+      padding-top: 30px;
+      padding-bottom: 100px;
+    }
     &__slide {
       position: relative;
       overflow: hidden;
@@ -323,6 +334,10 @@
       justify-content: space-between;
       align-items: stretch;
       flex-wrap: wrap;
+      @include media-breakpoint-down(md) {
+        margin-top: 2rem;
+        display: block;
+      }
       &__inner {
         overflow: hidden;
         width: 48%;
@@ -368,13 +383,27 @@
       justify-content: space-between;
       align-items: flex-start;
       flex-wrap: wrap;
+      @include media-breakpoint-down(md) {
+        margin-top: 2rem;
+        display: block;
+        width: 100vw;
+        margin: 2rem -15px 0;
+      }
       &__inner {
         width: 32%;
         text-align: center;
+        @include media-breakpoint-down(md) {
+          width: 100%;
+        }
         &:nth-child(1),
         &:nth-child(3) {
-          margin-top: 2rem;
+          @include media-breakpoint-up(md) {
+            margin-top: 2rem;
+          }
         }
+      }
+      .slick-slide {
+        margin: 0 5px;
       }
     }
   }
@@ -385,10 +414,18 @@
       align-items: flex-start;
       flex-wrap: wrap;
       margin-bottom: 4rem;
+      @include media-breakpoint-down(md) {
+        margin-bottom: 0;
+        display: block;
+      }
       &__inner {
         overflow: hidden;
         width: 48%;
         text-align: center;
+        @include media-breakpoint-down(md) {
+          width: 100%;
+          margin-bottom: 2rem;
+        }
       }
     }
   }

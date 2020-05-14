@@ -15,6 +15,14 @@
     border-radius: 50%;
     background-color: $success;
     color: $white;
+    @include media-breakpoint-down(md) {
+      width: 3rem;
+      height: 3rem;
+      right: auto;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
     .fas {
       position: absolute;
       top: 50%;
@@ -56,6 +64,7 @@
     &__right {
       @include media-breakpoint-down(md) {
         text-align: center;
+        margin-top: 2rem;
       }
     }
   }
@@ -138,11 +147,21 @@
   position: fixed;
   right: 1.5rem;
   bottom: 1rem;
+  @include media-breakpoint-down(md) {
+    right: 1rem;
+    bottom: 1rem;
+  }
   a {
     display: block;
+    @include media-breakpoint-down(md) {
+      margin-bottom: 0.5rem;
+    }
     img {
       max-width: 4vw;
       height: auto;
+      @include media-breakpoint-down(md) {
+        max-width: 4rem;
+      }
     }
     &:first-child {
       margin-bottom: 5px;

@@ -100,10 +100,35 @@ get_header(); ?>
 </div>
 </div>
 </div>
-<div class="beginner__flow__list__first__box mt-3">
+<div class="beginner__flow__list__first__box mt-3 mb-5">
 <h4>FAXの場合</h4>
 <p>ご希望のキャンプ名、参加者名、フリガナ、郵便番号、住所、電話番号、学年（年齢）、性別をご記入の上、FAXしてください。</p>
 </div>
+<div class="camplist__info__status__contact">
+<div class="camplist__info__status__contact__tel">
+<div class="camplist__info__status__contact__tel__left">
+<p class="camplist__info__status__contact__tel__left__ttl">なるかわ〜のキャンプ</p>
+<p class="camplist__info__status__contact__tel__left__txt">東大阪市立野外活動センター：10:00〜17:30（火曜日以外）</p>
+</div>
+<div class="camplist__info__status__contact__tel__right">
+<a href="tel:072-986-1551"><img src="<?php echo $wp_url; ?>/dist/images/icon_call.png" alt="アイコン"><span>072-986-1551</span></a>
+<a class="fax" href="tel:072-986-1550"><img src="<?php echo $wp_url; ?>/dist/images/icon_fax.png" alt="アイコン"><span>072-986-1550</span></a>
+</div>
+</div>
+<!-- camplist__info__status__contact__tel -->
+<div class="camplist__info__status__contact__tel">
+<div class="camplist__info__status__contact__tel__left">
+<p class="camplist__info__status__contact__tel__left__ttl">それ以外のキャンプ</p>
+<p class="camplist__info__status__contact__tel__left__txt">ユースサービス大阪事務局：受付時間 9:30～17:00（平日）</p>
+</div>
+<div class="camplist__info__status__contact__tel__right">
+<a href="tel:06-6561-7800"><img src="<?php echo $wp_url; ?>/dist/images/icon_call.png" alt="アイコン"><span>06-6561-7800</span></a>
+<a class="fax" href="tel:06-6561-7801"><img src="<?php echo $wp_url; ?>/dist/images/icon_fax.png" alt="アイコン"><span>06-6561-7801</span></a>
+</div>
+</div>
+<!-- camplist__info__status__contact__tel -->
+</div>
+<!-- camplist__info__status__contact -->
 </div>
 <!-- beginner__flow__list__inner beginner__flow__list__first -->
 <div class="beginner__flow__list__inner lp">
@@ -139,7 +164,7 @@ get_header(); ?>
 <p class="my-3">これで手続き完了です！<br>確認させていただく点がある方のみ、こちらからご連絡いたします。</p>
 <div class="d-md-flex justify-content-between align-items-center">
 <a class="btn btn-primary" href="">お振込先<i class="fas fa-play-circle"></i></a>
-<a class="btn btn-primary" href="">参加カードとは<i class="fas fa-play-circle"></i></a>
+<button class="btn btn-primary" data-toggle="modal" data-target="#about-card">参加カードとは<i class="fas fa-play-circle"></i></button>
 <a class="btn btn-primary" href="">キャンセル料<i class="fas fa-play-circle"></i></a>
 </div>
 </div>
@@ -615,4 +640,33 @@ get_header(); ?>
 <!-- beginner__cancel__wrap -->
 </div>
 </section>
+
+
+<!-- Modal -->
+<div class="modal fade" id="about-card" tabindex="-1" role="dialog" aria-labelledby="about-cardLabel" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+</div>
+<div class="modal-body">
+<h3 class="ttl__h3">参加カードとは</h3>
+<p>お子さまの健康面・心身の状態を把握し、安全で安心な活動を行うために提出をいただいております。また、グループ編成を行う際にも活用させていただきます。保護者の方からいただいた留意事項を十分に把握し、キャンプを進めてまいりますので、担当職員への要望・配慮事項などについても、お気軽にご記入ください。
+<br>（例）
+<br>・食事内容などのアレルギーがある場合
+<br>・活動に配慮が必要な健康上の条件（ぜんそく、アトピーなど）
+<br>・集団生活に参加する上で気になること、その他アウトドアリーダーに伝えたいこと　
+<br>・緊急連絡先（日中つながりやすい電話番号）を必ず入れるようにしてください。
+<br>
+<br>キャンプの集合時にも必ず、保護者の方にお子さまの当日の健康状態を確認させていただきます。
+<br>また、解散時には期間中のお子さまの活動の様子をお伝えいたします。
+<br>
+<br>※詳しくは、<a href="#menu4" data-dismiss="modal">「よくあるご質問」</a>に掲載していますので、ご参照ください。</p>
+<p class="mb-0 mt-4 p-4 bg-light">当財団の個人情報保護規程に基づき、個人情報を取り扱います。キャンプ終了後、参加カードは完全に破棄し、個人情報は運営上必要な事務連絡に限り使用いたします。また、キャンプ中に撮影した写真は、情報誌やチラシ、ホームページなどに掲載させていただくことがありますので、ご了承ください。<a href="<?php $home; ?>/privacy-policy/">詳しくはこちら</a></p>
+</div>
+</div>
+</div>
+</div>
 <?php get_footer();

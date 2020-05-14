@@ -26,14 +26,27 @@ if (has_post_thumbnail()) {
 }
 $t = get_the_title();
 $p = get_the_permalink();
+$gallery_year = get_field('gallery_year');
+$gallery_days = get_field('gallery_days');
+$gallery_camp_url = get_field('gallery_camp_url');
 ?>
+<li class="gallery__list__inner">
+<div class="gallery__list__inner__thumbnail"><img src="<?php echo $thumbnail; ?>" alt="<?php echo $t; ?>"></div>
+<p class="gallery__list__inner__year"><?php echo $gallery_year; ?></p>
+<p class="gallery__list__inner__ttl"><?php echo $t; ?></p>
+<p class="gallery__list__inner__days"><i class="far fa-calendar-alt text-success mr-2"></i><?php echo $gallery_days; ?></p>
+<div class="gallery__list__inner__btns">
+<a class="btn btn-secondary" href="<?php echo $gallery_camp_url; ?>">キャンプの様子<i class="fas fa-play-circle"></i></a>
+<a class="btn btn-primary" href="<?php echo $p; ?>">参加者専用写真コーナー<i class="fas fa-play-circle"></i></a>
+</div>
+</li>
 <?php endwhile; endif; ?>
 </ul>
 <?php if (function_exists('wp_pagenavi')) {
     wp_pagenavi();
 } ?>
 </div>
-<?php get_sidebar(); ?>
+<?php get_sidebar('gallery'); ?>
 </div>
 </section>
 <?php get_footer();

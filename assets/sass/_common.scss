@@ -98,6 +98,34 @@ a {
   &-primary {
     border-color: #0d5a86;
     color: $white;
+    &:hover {
+      border-color: #0d5a86;
+    }
+  }
+  &-secondary {
+    background-color: #ffa810;
+    border-color: #c5820d;
+    color: $white;
+    &:hover {
+      background-color: #ffa810;
+      border-color: #c5820d;
+    }
+  }
+  &-light {
+    background-color: #eeeeee;
+    border: 0;
+    color: $dark;
+    padding: 1.25em 3em;
+    &:hover {
+      background-color: #eeeeee;
+      border: 0;
+      color: $dark;
+    }
+    i {
+      right: auto;
+      left: 1.5em;
+      transform: translateY(-50%) rotate(180deg);
+    }
   }
 }
 

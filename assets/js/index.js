@@ -91,6 +91,7 @@ $(function ($) {
           slidesToScroll: 1,
           slidesPerRow: 1,
           centerPadding: "5vw",
+          arrows: false,
         },
       },
     ],
@@ -230,6 +231,22 @@ $(function ($) {
     let url = $(this).val();
     if (url != "") {
       location.href = url;
+    }
+  });
+
+  // toggle
+  $(".beginner__faq__list__inner__ttl__btn").on("click", function () {
+    $(this).parent().next(".beginner__faq__list__inner__ans").slideToggle();
+    $(this).toggleClass("active");
+    $(this).parent().next(".beginner__faq__list__inner__ans").toggleClass("active");
+    $(this).parent().toggleClass("active");
+  });
+  let moreNum = 4;
+  $(".more-list .beginner__faq__list__inner:nth-child(n + " + (moreNum + 1) + ")").addClass("is-hidden");
+  $(".more").on("click", function () {
+    $(".more-list .beginner__faq__list__inner.is-hidden").slice(0, moreNum).removeClass("is-hidden");
+    if ($(".more-list .beginner__faq__list__inner.is-hidden").length == 0) {
+      $(".more").fadeOut();
     }
   });
 });

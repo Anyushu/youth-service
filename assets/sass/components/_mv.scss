@@ -60,6 +60,9 @@
         img {
           width: auto;
           height: 100%;
+          @include media-breakpoint-down(md) {
+            max-height: 100%;
+          }
         }
       }
     }

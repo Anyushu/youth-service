@@ -14,7 +14,9 @@ if (function_exists('yoast_breadcrumb')) {
 
 <section class="sec">
 <div class="container">
+<div class="single__main">
 <?php the_content(); ?>
+</div>
 </div>
 </section>
 <?php get_footer();

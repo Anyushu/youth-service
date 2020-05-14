@@ -198,12 +198,12 @@ if ($camp_status !== '終了') {
 </div>
 <div>
 <p class="text-center small mb-2">FAX送信でお申し込みの方</p>
-<a class="btn btn-primary" href="<?php $home; ?>/pdf/jigyo-mail.pdf" target="_blank">FAX用紙の印刷へ<i class="fas fa-play-circle"></i></a>
+<a class="btn btn-primary" href="<?php echo $home; ?>/pdf/jigyo-mail.pdf" target="_blank">FAX用紙の印刷へ<i class="fas fa-play-circle"></i></a>
 </div>
 </div>
 <!-- camplist__post__btns -->
 <div class="camplist__post__prev">
-<a class="btn btn-light" href="<?php $home; ?>/camplist/" target="_blank"><i class="fas fa-play-circle text-success"></i>募集中のキャンプ一覧へ戻る</a>
+<a class="btn btn-light" href="<?php echo $home; ?>/camplist/"><i class="fas fa-play-circle text-success"></i>募集中のキャンプ一覧へ戻る</a>
 </div>
 <?php endif; ?>
 

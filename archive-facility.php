@@ -43,6 +43,6 @@ $address = get_field('facility_address');
     wp_pagenavi();
 } ?>
 </div>
-</section>
+</div>
 
 <?php get_footer();

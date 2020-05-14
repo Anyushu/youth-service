@@ -10,6 +10,12 @@
     @include media-breakpoint-down(md) {
       height: 95vh;
     }
+    &>img {
+      position: absolute;
+      z-index: 1;
+      bottom: 0;
+      left: 0;
+    }
     &__copy {
       z-index: 2;
       position: absolute;
@@ -124,6 +130,11 @@
           width: 100%;
           margin-top: 2rem !important;
         }
+        img {
+          @include media-breakpoint-down(md) {
+            width: 100%;
+          }
+        }
         &:nth-child(2) {
           margin: 0 2%;
           @include media-breakpoint-down(md) {
@@ -156,6 +167,10 @@
       position: absolute;
       bottom: 0;
       left: 0;
+      &.img-switch {
+        bottom: auto;
+        top: 0;
+      }
     }
     &__wrap {
       display: flex;

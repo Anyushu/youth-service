@@ -29,6 +29,7 @@ $gallery_zip = get_field('gallery_zip');
 $gallery_pics = SCF::get('gallery_pics');
 ?>
 <h2 class="gallery__post__ttl"><?php echo $t; ?></h2>
+<?php if (!post_password_required($id)): ?>
 <p class="gallery__list__inner__days text-md-center"><i class="far fa-calendar-alt text-success mr-2"></i><?php echo $gallery_days; ?></p>
 <div class="gallery__post__pics">
 <?php foreach ($gallery_pics as $key => $val): ?>
@@ -39,6 +40,9 @@ $gallery_pics = SCF::get('gallery_pics');
 <a class="btn btn-secondary" href="<?php echo $gallery_zip; ?>">写真一括ダウンロード（ZIP）</a>
 <p class="small">※スマホでのダウンロードはできませんので、予めご了承くださいませ。</p>
 </div>
+<?php else: ?>
+<?php echo get_the_password_form(); ?>
+<?php endif; ?>
 <div class="gallery__post__prev">
 <a class="btn btn-primary" href="<?php echo $home; ?>/gallery/">一覧に戻る<i class="fas fa-play-circle"></i></a>
 </div>

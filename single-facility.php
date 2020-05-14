@@ -66,31 +66,31 @@ for ($i=1; $i <= 5; $i++) {
 <table class="table w-100">
 <tbody>
 <tr>
-<th>所在地</th>
+<th class="text-nowrap">所在地</th>
 <td><?php echo $address; ?></td>
 </tr>
 <tr>
-<th>電話番号</th>
+<th class="text-nowrap">電話番号</th>
 <td><a href="tel:<?php echo $tel; ?>"><?php echo $tel; ?></a></td>
 </tr>
 <tr>
-<th>利用料金</th>
+<th class="text-nowrap">利用料金</th>
 <td><?php echo $fee; ?></td>
 </tr>
 <tr>
-<th>定員</th>
+<th class="text-nowrap">定員</th>
 <td><?php echo $capacity; ?></td>
 </tr>
 <tr>
-<th>休所日</th>
+<th class="text-nowrap">休所日</th>
 <td><?php echo $holiday; ?></td>
 </tr>
 <tr>
-<th>主なプログラム</th>
+<th class="text-nowrap">主なプログラム</th>
 <td><?php echo $program; ?></td>
 </tr>
 <tr>
-<th>ホームページ</th>
+<th class="text-nowrap">ホームページ</th>
 <td><a href="<?php echo $hp; ?>" target="_blank"><?php echo $hp; ?></a></td>
 </tr>
 </tbody>

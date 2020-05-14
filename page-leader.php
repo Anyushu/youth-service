@@ -172,21 +172,21 @@ YMCA阿南海洋センター・国立淡路⻘少年交流の家・大阪府立�
 <div class="table-wrap">
 <table class="table w-100">
 <tr>
-<th>対象者</th>
+<th class="text-md-nowrap">対象者</th>
 <td>原則として、4年制大学の1〜2年生の方で、子どもとの関わり方、キャン
 プや自然などに興味のある方。（基本的に大学卒業時まで活動できる方）</td>
 </tr>
 <tr>
-<th>募集人数</th>
+<th class="text-md-nowrap">募集人数</th>
 <td>ユースリーダー40名程度<br>
 なるかわリーダー25名程度</td>
 </tr>
 <tr>
-<th>必要経費</th>
+<th class="text-md-nowrap">必要経費</th>
 <td>ユニフォーム貸与、活動中の食事・交通費を⽀給いたします。</td>
 </tr>
 <tr>
-<th>活動場所</th>
+<th class="text-md-nowrap">活動場所</th>
 <td>
 <ul>
 <li><a href="http://www.yso-yoshinomiyataki.jp/index.html" target="_blank">吉野宮滝野外学校（奈良県吉野町）</a></li>
@@ -205,15 +205,15 @@ YMCA阿南海洋センター・国立淡路⻘少年交流の家・大阪府立�
 </td>
 </tr>
 <tr>
-<th>研修制度</th>
+<th class="text-md-nowrap">研修制度</th>
 <td>年間を通して宿泊研修、日帰り研修を実施します。</td>
 </tr>
 <tr>
-<th>保険の加入</th>
+<th class="text-md-nowrap">保険の加入</th>
 <td>ボランティア活動保険に加入します。（加入費は当財団負担）</td>
 </tr>
 <tr>
-<th>応募方法</th>
+<th class="text-md-nowrap">応募方法</th>
 <td>下記の受付は終了いたしました。ご興味のある方はお電話でお問い合わせください。<br>
 <br>
 まずは下記説明会（ガイダンス）へお越しください！（所要時間：30分〜1時間程度）<br>
@@ -233,14 +233,18 @@ YMCA阿南海洋センター・国立淡路⻘少年交流の家・大阪府立�
 大阪市浪速区幸町2丁目7−3 りそな・アルテ桜川ビル4階（阪神なんば線／地下鉄千日前線「桜川」駅すぐ）</td>
 </tr>
 <tr>
-<th>アウトドアリーダー募集チラシ</th>
+<th class="text-md-nowrap">アウトドアリーダー募集チラシ</th>
 <td>受付は終了いたしました。ご興味のある方はお電話でお問い合わせください。<br>
-<span class="d-inline-block mr-1 mt-3"><img src="<?php echo $wp_url; ?>/dist/images/tirashi_1.png" alt="アウトドアリーダー募集チラシ"><span class="small d-block text-center text-muted">クリックで拡大</span></span>
-<span class="d-inline-block"><img src="<?php echo $wp_url; ?>/dist/images/tirashi_2.png" alt="アウトドアリーダー募集チラシ"><span class="small d-block text-center text-muted">クリックで拡大</span></span>
+<span class="d-inline-block mr-1 mt-3">
+<a href="<?php echo $home; ?>/pdf/leader_aa.pdf" target="_blank">
+<img src="<?php echo $wp_url; ?>/dist/images/tirashi_1.png" alt="アウトドアリーダー募集チラシ"><span class="small d-block text-center text-muted">クリックで拡大</span></span></a>
+<span class="d-inline-block">
+<a href="<?php echo $home; ?>/pdf/leader_bb.pdf" target="_blank">
+<img src="<?php echo $wp_url; ?>/dist/images/tirashi_2.png" alt="アウトドアリーダー募集チラシ"><span class="small d-block text-center text-muted">クリックで拡大</span></span></a>
 </td>
 </tr>
 <tr>
-<th>アウトドアリーダー用Instagram</th>
+<th class="text-md-nowrap">アウトドアリーダー用Instagram</th>
 <td><a href="https://www.instagram.com/yso̲camp/" target="_blank">Instagramへ</a></td>
 </tr>
 </table>

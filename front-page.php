@@ -5,17 +5,10 @@ get_header(); ?>
 <div class="home__mv">
 <div class="container h-100">
 <div class="home__mv__copy">
-<p class="text-center">
-<img class="w-100" src="<?php echo $wp_url; ?>/dist/images/mv_balloon_pc.png" alt="今しかできない" srcset="<?php echo $wp_url; ?>/dist/images/mv_balloon_pc.png 1x, <?php echo $wp_url; ?>/dist/images/mv_balloon_pc@2x.png 2x">
-</p>
-<p class="text-center">
-<img class="w-100" src="<?php echo $wp_url; ?>/dist/images/mv_copy_pc.png" alt="今しかできない" srcset="<?php echo $wp_url; ?>/dist/images/mv_copy_pc.png 1x, <?php echo $wp_url; ?>/dist/images/mv_copy_pc@2x.png 2x">
-</p>
-<p class="mb-0 home__mv__copy__txt">ユースサービス大阪はキャンプやスキーなど
-<br>子ども達のたくさんの笑顔に出会える楽しいプランを提供し、
-<br>こころ豊かで健やかな成⻑を⽀援しています。</p>
+<p class="text-center"><img class="w-100 animate__animated animate__bounce animate__delay-1s" src="<?php echo $wp_url; ?>/dist/images/mv_balloon_pc.png" alt="今しかできない" srcset="<?php echo $wp_url; ?>/dist/images/mv_balloon_pc.png 1x, <?php echo $wp_url; ?>/dist/images/mv_balloon_pc@2x.png 2x"></p>
+<p class="text-center"><img class="w-100 animate__animated animate__bounce animate__delay-2s" src="<?php echo $wp_url; ?>/dist/images/mv_copy_pc.png" alt="今しかできない" srcset="<?php echo $wp_url; ?>/dist/images/mv_copy_pc.png 1x, <?php echo $wp_url; ?>/dist/images/mv_copy_pc@2x.png 2x"></p>
+<p class="mb-0 home__mv__copy__txt">ユースサービス大阪はキャンプやスキーなど<br>子ども達のたくさんの笑顔に出会える楽しいプランを提供し、<br>こころ豊かで健やかな成⻑を⽀援しています。</p>
 </div>
-
 <!-- swiper -->
 <div class="home__mv__slide--1">
 <?php for ($i=1; $i <= 8; $i++): ?>
@@ -37,8 +30,8 @@ get_header(); ?>
 <div><img src="<?php echo $wp_url; ?>/dist/images/img_<?php echo $i; ?>.png" alt="スライダー<?php echo $i; ?>"></div>
 <?php endfor; ?>
 </div>
-
 </div>
+<img class="img-switch w-100" src="<?php echo $wp_url; ?>/dist/images/bg_read_top_pc.png" alt="装飾">
 </div>
 <!-- mv -->
 <section class="sec home__read bg-success">
@@ -64,11 +57,12 @@ get_header(); ?>
 </section>
 <!-- home__read -->
 <section class="sec home__news bg-light">
+<img class="img-switch w-100" src="<?php echo $wp_url; ?>/dist/images/bg_read_bottom_pc.png" alt="装飾">
 <div class="container">
 <div class="home__news__wrap">
 <div class="home__news__wrap__list">
 <a class="more-txt" href="<?php echo $home; ?>/news/">一覧を見る<i class="fas fa-play-circle text-success ml-1"></i></a>
-<h2 class="home__news__wrap__list__ttl"><span><img src="<?php echo $wp_url; ?>/dist/images/ttl_news_pc.png" alt=""></span></h2>
+<h2 class="home__news__wrap__list__ttl"><span><img src="<?php echo $wp_url; ?>/dist/images/ttl_news_pc.png" alt="news"></span></h2>
 <ul class="news__list">
 <?php
 $args = [
@@ -99,7 +93,7 @@ $cat_name = $categories[0]->name;
 <span class="cat"><span><?php echo $cat_name; ?></span></span>
 </div>
 <h3><?php echo $t; ?></h3>
-<p><?php the_excerpt(); ?></p>
+<?php the_excerpt(); ?>
 </div>
 </a>
 </li>
@@ -108,9 +102,9 @@ $cat_name = $categories[0]->name;
 <!-- news__list -->
 </div>
 <div class="home__news__wrap__side">
-<div class="mb-4"><a href="<?php echo $home; ?>/beginner/"><img src="<?php echo $wp_url; ?>/dist/images/bnr_beginner.png" alt=""></a></div>
-<div class="mb-4"><a href="https://www.facebook.com/yso.or.jp" target="_blank"><img src="<?php echo $wp_url; ?>/dist/images/bnr_facebook.png" alt=""></a></div>
-<div><a href="https://www.instagram.com/yso̲camp/" target="_blank"><img src="<?php echo $wp_url; ?>/dist/images/bnr_instagram.png" alt=""></a></div>
+<div class="mb-4"><a href="<?php echo $home; ?>/beginner/"><img class="w-100" src="<?php echo $wp_url; ?>/dist/images/bnr_beginner.png" alt=""></a></div>
+<div class="mb-4"><a href="https://www.facebook.com/yso.or.jp" target="_blank"><img class="w-100" src="<?php echo $wp_url; ?>/dist/images/bnr_facebook.png" alt=""></a></div>
+<div><a href="https://www.instagram.com/yso̲camp/" target="_blank"><img class="w-100" src="<?php echo $wp_url; ?>/dist/images/bnr_instagram.png" alt=""></a></div>
 </div>
 </div>
 </div>
@@ -133,21 +127,21 @@ $cat_name = $categories[0]->name;
 <!-- home__gallery -->
 <section class="sec home__point">
 <div class="container">
-<h2 class="text-center mb-5"><img class="img-switch" src="<?php echo $wp_url; ?>/dist/images/ttl_point_pc.png" alt=""></h2>
+<h2 class="text-center mb-5"><img class="img-switch" src="<?php echo $wp_url; ?>/dist/images/ttl_point_pc.png" alt="ポイント"></h2>
 <p class="text-center">ユースサービス大阪は、半世紀にわたり蓄積してきたノウハウと豊かな人材を活かし、<br>初めてキャンプに参加するお子さまに安心して参加頂くための取り組みを徹底しています。</p>
 <div class="home__point__list">
 <div class="home__point__list__inner">
-<img src="<?php echo $wp_url; ?>/dist/images/point_img_1_pc.png" alt="">
+<img src="<?php echo $wp_url; ?>/dist/images/point_img_1_pc.png" alt="ポイント">
 <div class="home__point__list__inner__txt">
-<h3><img src="<?php echo $wp_url; ?>/dist/images/point1_txt_pc.png" alt=""></h3>
+<h3><img src="<?php echo $wp_url; ?>/dist/images/point1_txt_pc.png" alt="ポイント"></h3>
 <p>キャンプに同行するアウトドアリーダーは<br>年18回の徹底した研修を受けております。</p>
 </div>
 </div>
 <!-- home__point__list__inner -->
 <div class="home__point__list__inner">
-<img src="<?php echo $wp_url; ?>/dist/images/point_img_2_pc.png" alt="">
+<img src="<?php echo $wp_url; ?>/dist/images/point_img_2_pc.png" alt="ポイント">
 <div class="home__point__list__inner__txt">
-<h3><img src="<?php echo $wp_url; ?>/dist/images/point2_txt_pc.png" alt=""></h3>
+<h3><img src="<?php echo $wp_url; ?>/dist/images/point2_txt_pc.png" alt="ポイント"></h3>
 <p>お子さまの体調や万が一のケガに備えて、<br>看護師を帯同させております。※</p>
 </div>
 </div>
@@ -163,7 +157,7 @@ $cat_name = $categories[0]->name;
 <!-- home__point -->
 <section class="sec home__point2 bg-success">
 <div class="container">
-<h2 class="text-center mb-5"><img class="img-switch" src="<?php echo $wp_url; ?>/dist/images/ttl_point2_pc.png" alt=""></h2>
+<h2 class="text-center mb-5"><img class="img-switch" src="<?php echo $wp_url; ?>/dist/images/ttl_point2_pc.png" alt="ポイント"></h2>
 <p class="text-center text-white">ユースサービス大阪は、<br class="d-md-none">楽しくグループ活動が体験できるように、<br class="d-md-none">数多くの特色ある事業を企画しています。</p>
 <div class="home__point2__list">
 <div class="home__point2__list__inner">
@@ -179,7 +173,7 @@ $cat_name = $categories[0]->name;
 </div>
 </section>
 <!-- home__point2 -->
-<section class="sec home__program bg-grid bg-light">
+<div class="sec home__program bg-grid bg-light">
 <div class="container">
 <div class="home__program__list">
 <div class="home__program__list__inner">
@@ -195,5 +189,5 @@ $cat_name = $categories[0]->name;
 </div>
 <p class="text-center mb-0"><img class="img-switch" src="<?php echo $wp_url; ?>/dist/images/agree_pc.png" alt="" srcset="<?php echo $wp_url; ?>/dist/images/agree_pc.png 1x, <?php echo $wp_url; ?>/dist/images/agree_pc@2x.png 2x"></p>
 </div>
-</section>
+</div>
 <?php get_footer();

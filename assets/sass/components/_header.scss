@@ -274,9 +274,9 @@
             font-weight: bold;
             @include media-breakpoint-down(md) {
               width: auto;
-              min-width: 32%;
+              min-width: 35%;
               padding: 0.5rem 0;
-              font-size: 12px;
+              font-size: 13px;
             }
           }
         }

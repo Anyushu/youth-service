@@ -25,7 +25,7 @@ if (function_exists('yoast_breadcrumb')) {
 <section class="sec login__form">
 <div class="container">
 <div class="login__form__wrap">
-<form class="login__form__inner" action="<?php $home; ?>/status/" method="get">
+<form class="login__form__inner" action="<?php echo $home; ?>/status/" method="get">
 <h3 class="ttl__h3">提出確認フォーム</h3>
 <div class="ol__form__table">
 <table class="table table-borderless w-100">

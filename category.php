@@ -40,7 +40,7 @@ $cat_name = $categories[0]->name;
 <span class="cat"><span><?php echo $cat_name; ?></span></span>
 </div>
 <h3><?php echo $t; ?></h3>
-<p><?php the_excerpt(); ?></p>
+<?php the_excerpt(); ?>
 </div>
 </a>
 </li>

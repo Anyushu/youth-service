@@ -52,7 +52,7 @@ get_header(); ?>
 </div>
 <div class="beginner__feature__list__inner">
 <img src="<?php echo $wp_url; ?>/dist/images/feature_3.png" alt="特長" srcset="<?php echo $wp_url; ?>/dist/images/feature_3.png 1x, <?php echo $wp_url; ?>/dist/images/feature_3@2x.png 2x">
-<a href="<?php $home; ?>/leader/"></a>
+<a href="<?php echo $home; ?>/leader/"></a>
 </div>
 <div class="beginner__feature__list__inner">
 <img src="<?php echo $wp_url; ?>/dist/images/feature_4.png" alt="特長" srcset="<?php echo $wp_url; ?>/dist/images/feature_4.png 1x, <?php echo $wp_url; ?>/dist/images/feature_4@2x.png 2x">
@@ -163,9 +163,9 @@ get_header(); ?>
 </div>
 <p class="my-3">これで手続き完了です！<br>確認させていただく点がある方のみ、こちらからご連絡いたします。</p>
 <div class="d-md-flex justify-content-between align-items-center">
-<a class="btn btn-primary" href="">お振込先<i class="fas fa-play-circle"></i></a>
+<button class="btn btn-primary" data-toggle="modal" data-target="#about-send">お振込先<i class="fas fa-play-circle"></i></button>
 <button class="btn btn-primary" data-toggle="modal" data-target="#about-card">参加カードとは<i class="fas fa-play-circle"></i></button>
-<a class="btn btn-primary" href="">キャンセル料<i class="fas fa-play-circle"></i></a>
+<button class="btn btn-primary" data-toggle="modal" data-target="#about-cancel">キャンセル料<i class="fas fa-play-circle"></i></button>
 </div>
 </div>
 </div>
@@ -178,8 +178,8 @@ get_header(); ?>
 <br>参加は自由ですが、お子さまが初めてキャンプに参加する場合には、ご参加をお勧めしております。
 <br>もちろん、お電話で質問をいただいても大丈夫です。
 <br>
-<br>※持ち物についてのご質問は、<a href="">「よくあるご質問」</a>もご参照ください。</p>
-<p class="text-md-right mb-0"><a class="btn btn-primary" href="">保護者説明会について<i class="fas fa-play-circle"></i></a></p>
+<br>※持ち物についてのご質問は、<a href="#menu4">「よくあるご質問」</a>もご参照ください。</p>
+<p class="text-md-right mb-0"><a class="btn btn-primary" href="<?php echo $home; ?>/news/hogosha/">保護者説明会について<i class="fas fa-play-circle"></i></a></p>
 </div>
 </div>
 <!-- beginner__flow__list__inner lp-->
@@ -641,9 +641,8 @@ get_header(); ?>
 </div>
 </section>
 
-
 <!-- Modal -->
-<div class="modal fade" id="about-card" tabindex="-1" role="dialog" aria-labelledby="about-cardLabel" aria-hidden="true">
+<div class="modal fade" id="about-card" tabindex="-1" role="dialog" aria-hidden="true">
 <div class="modal-dialog modal-lg">
 <div class="modal-content">
 <div class="modal-header">
@@ -664,7 +663,52 @@ get_header(); ?>
 <br>また、解散時には期間中のお子さまの活動の様子をお伝えいたします。
 <br>
 <br>※詳しくは、<a href="#menu4" data-dismiss="modal">「よくあるご質問」</a>に掲載していますので、ご参照ください。</p>
-<p class="mb-0 mt-4 p-4 bg-light">当財団の個人情報保護規程に基づき、個人情報を取り扱います。キャンプ終了後、参加カードは完全に破棄し、個人情報は運営上必要な事務連絡に限り使用いたします。また、キャンプ中に撮影した写真は、情報誌やチラシ、ホームページなどに掲載させていただくことがありますので、ご了承ください。<a href="<?php $home; ?>/privacy-policy/">詳しくはこちら</a></p>
+<p class="mb-0 mt-4 p-4 bg-light">当財団の個人情報保護規程に基づき、個人情報を取り扱います。キャンプ終了後、参加カードは完全に破棄し、個人情報は運営上必要な事務連絡に限り使用いたします。また、キャンプ中に撮影した写真は、情報誌やチラシ、ホームページなどに掲載させていただくことがありますので、ご了承ください。<a href="<?php echo $home; ?>/privacy-policy/">詳しくはこちら</a></p>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="about-send" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+</div>
+<div class="modal-body">
+<h3 class="ttl__h3">お振込先</h3>
+<p><span class="font-weight-bold text-success">【お振込先】</span>
+<br>・三井住友銀行　大阪公務部　普通預金　No.804　（名義）一般財団法人大阪府青少年活動財団
+<br>・りそな銀行　大手支店　普通預金　　No.0239309　（名義）一般財団法人大阪府青少年活動財団
+<br>・三菱ＵＦＪ銀行　谷町支店　普通預金　No.0514060　（名義）一般財団法人大阪府青少年活動財団
+<br>・ゆうちょ銀行　No.00900-1-23101　（名義）一般財団法人大阪府青少年活動財団
+<br>※ゆうちょダイレクトをご利用の場合は、記号の「-1」を省略
+<br>
+<br><span class="font-weight-bold text-success">【なるかわキャンプのお振込先】</span>
+<br>・関西みらい銀行　枚岡支店　普通預金 No.591082　（名義）一般財団法人大阪府青少年活動財団</p>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="about-cancel" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+</div>
+<div class="modal-body">
+<h3 class="ttl__h3">キャンセル料金</h3>
+<p>キャンプ開始日の前日から起算してさかのぼって20日目（日帰りキャンプの場合は、10日目）にあたる日。
+<br>以後、標準国内旅行業約款に基づき、期間ごとに定めたキャンセル料を頂戴しております。
+<br>
+<br>※詳しくは、<a href="#menu5" data-dismiss="modal">「キャンセル料について」</a>に掲載していますので、ご参照ください。</p>
 </div>
 </div>
 </div>

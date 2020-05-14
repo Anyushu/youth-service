@@ -39,7 +39,6 @@ if (function_exists('yoast_breadcrumb')) {
 
 <?php
 if ($status_no !== null && $status_code !== null) {
-    $no = '';// 確認番号
     $camp_code = '';// キャンプコード
     $camp_name = '';// キャンプ名
     $camp_fee = '';// ご入金
@@ -47,11 +46,25 @@ if ($status_no !== null && $status_code !== null) {
     $args = [
         'posts_per_page' => 1,
         'post_type' => 'fee_status',
-        'title' => ''.$status_no
+        'meta_query' => [
+            [
+                'key' => 'status_num',
+                'value' => $status_no,
+            ],
+            [
+                'key' => 'status_code',
+                'value' => $status_code,
+            ]
+        ]
     ];
     $posts = get_posts($args);
+    if (count($posts) === 0) {
+        $flag = false;
+    } else {
+        $flag = true;
+    }
     foreach ($posts as $post): setup_postdata($post);
-    $no = get_the_title();
+    $camp_num = get_field('status_num');
     $camp_code = get_field('status_code');
     $camp_name = get_field('status_camp_name');
     $camp_fee = get_field('status_fee');
@@ -60,12 +73,12 @@ if ($status_no !== null && $status_code !== null) {
     wp_reset_postdata();
 }
 ?>
-
+<?php if ($flag): ?>
 <table class="table w-100 mt-5">
 <tbody>
 <tr>
 <th>確認番号</th>
-<td><?php echo $no; ?></td>
+<td><?php echo $camp_num; ?></td>
 </tr>
 <tr>
 <th>キャンプコード</th>
@@ -93,6 +106,9 @@ if ($status_no !== null && $status_code !== null) {
 </tr>
 </tbody>
 </table>
+<?php else: ?>
+<p class="text-danger">確認番号とキャンプコードが確認できませんでした。</p>
+<?php endif; ?>
 </div>
 
 <div class="login__form__box">

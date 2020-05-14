@@ -11,6 +11,8 @@ $(function ($) {
 
   // リサイズ
   $(window).on("load resize", function () {
+    $(".home__mv").css('height', $(this).height());
+
     if (w <= md) {
       $(".img-switch").each(function () {
         $(this).attr("src", $(this).attr("src").replace("_pc", "_sp"));

@@ -153,7 +153,7 @@ TEL：06-6910-8500&nbsp;&nbsp;/&nbsp;&nbsp;FAX：06-6910-8775</td>
 </div>
 <div class="about__access__map__inner">
 <div>
-<img src="<?php echo $wp_url; ?>/dist/images/map.png" alt="地図">
+<a href="<?php echo $wp_url; ?>/dist/images/map.png" target="_blank"><img src="<?php echo $wp_url; ?>/dist/images/map.png" alt="地図"></a>
 </div>
 <p class="mt-3 mb-0 text-right">クッリクで拡大します</p>
 </div>
@@ -210,43 +210,43 @@ TEL：06-6910-8500&nbsp;&nbsp;/&nbsp;&nbsp;FAX：06-6910-8775</td>
 <table class="table w-100">
 <tr>
 <th>事業計画<br>令和2年（2020）年度</th>
-<td><a href="<?php $home; ?>/pdf/2020yso-campplan01.pdf" target="_blank">2020年度事業計画（PDF 254KB）</a><br>
-<a href="<?php $home; ?>/pdf/2020yso-campplan02.pdf" target="_blank">2020年度事業計画《資料編》（PDF 375KB）</a><br>
-<a href="<?php $home; ?>/pdf/2020yso-campplan03.pdf" target="_blank">2020年度収⽀予算書（PDF 102KB）</a></td>
+<td><a href="<?php echo $home; ?>/pdf/2020yso-campplan01.pdf" target="_blank">2020年度事業計画（PDF 254KB）</a><br>
+<a href="<?php echo $home; ?>/pdf/2020yso-campplan02.pdf" target="_blank">2020年度事業計画《資料編》（PDF 375KB）</a><br>
+<a href="<?php echo $home; ?>/pdf/2020yso-campplan03.pdf" target="_blank">2020年度収⽀予算書（PDF 102KB）</a></td>
 </tr>
 <tr>
 <th>事業計画<br>平成31（2019）年度</th>
-<td><a href="<?php $home; ?>/pdf/2019yso-campplan01.pdf" target="_blank">2019年度事業計画（PDF 254KB）</a><br>
-<a href="<?php $home; ?>/pdf/2019yso-campplan02.pdf" target="_blank">2019年度事業計画《資料編》（PDF 375KB）</a><br>
-<a href="<?php $home; ?>/pdf/2019yso-campplan03.pdf" target="_blank">2019年度収⽀予算書（PDF 102KB）</a></td>
+<td><a href="<?php echo $home; ?>/pdf/2019yso-campplan01.pdf" target="_blank">2019年度事業計画（PDF 254KB）</a><br>
+<a href="<?php echo $home; ?>/pdf/2019yso-campplan02.pdf" target="_blank">2019年度事業計画《資料編》（PDF 375KB）</a><br>
+<a href="<?php echo $home; ?>/pdf/2019yso-campplan03.pdf" target="_blank">2019年度収⽀予算書（PDF 102KB）</a></td>
 </tr>
 <tr>
 <th>事業報告<br>
 平成30（2018）年度</th>
-<td><a href="<?php $home; ?>/pdf/2018-01_report01.pdf" target="_blank">2018年度事業報告（PDF 1,174KB）</a><br>
-<a href="<?php $home; ?>/pdf/2018-01_report02.pdf" target="_blank">2018年度事業報告《資料編》（PDF 484KB）</a><br>
-<a href="<?php $home; ?>/pdf/2018-02_BS.pdf" target="_blank">2018年度貸借対照表（PDF 100KB）</a><br>
-<a href="<?php $home; ?>/pdf/2018-03_PL.pdf" target="_blank">2018年度正味財産増減計算書（PDF 125KB）</a><br>
-<a href="<?php $home; ?>/pdf/2018-04_PLB.pdf" target="_blank">2018年度正味財産増減計算書内訳書（PDF 250KB）</a><br>
-<a href="<?php $home; ?>/pdf/2018-05_NFS.pdf" target="_blank">2018年度財務諸表に対する注記（PDF 127KB）</a><br>
-<a href="<?php $home; ?>/pdf/2018-06_SA.pdf" target="_blank">2018年度附属明細書（PDF 962KB）</a><br>
-<a href="<?php $home; ?>/pdf/2018-07_PUB.pdf" target="_blank">2018年度公益目的⽀出計画実施報告書（PDF 64KB）</a></td>
+<td><a href="<?php echo $home; ?>/pdf/2018-01_report01.pdf" target="_blank">2018年度事業報告（PDF 1,174KB）</a><br>
+<a href="<?php echo $home; ?>/pdf/2018-01_report02.pdf" target="_blank">2018年度事業報告《資料編》（PDF 484KB）</a><br>
+<a href="<?php echo $home; ?>/pdf/2018-02_BS.pdf" target="_blank">2018年度貸借対照表（PDF 100KB）</a><br>
+<a href="<?php echo $home; ?>/pdf/2018-03_PL.pdf" target="_blank">2018年度正味財産増減計算書（PDF 125KB）</a><br>
+<a href="<?php echo $home; ?>/pdf/2018-04_PLB.pdf" target="_blank">2018年度正味財産増減計算書内訳書（PDF 250KB）</a><br>
+<a href="<?php echo $home; ?>/pdf/2018-05_NFS.pdf" target="_blank">2018年度財務諸表に対する注記（PDF 127KB）</a><br>
+<a href="<?php echo $home; ?>/pdf/2018-06_SA.pdf" target="_blank">2018年度附属明細書（PDF 962KB）</a><br>
+<a href="<?php echo $home; ?>/pdf/2018-07_PUB.pdf" target="_blank">2018年度公益目的⽀出計画実施報告書（PDF 64KB）</a></td>
 </tr>
 <tr>
 <th>平成29（2017）年度</th>
-<td><a href="<?php $home; ?>/pdf/2017-01_BS.pdf" target="_blank">2017年度貸借対照表（PDF 127KB）</a></td>
+<td><a href="<?php echo $home; ?>/pdf/2017-01_BS.pdf" target="_blank">2017年度貸借対照表（PDF 127KB）</a></td>
 </tr>
 <tr>
 <th>平成28（2016）年度</th>
-<td><a href="<?php $home; ?>/pdf/2016-03closebook.pdf" target="_blank">2016年度貸借対照表（PDF 99KB）</a></td>
+<td><a href="<?php echo $home; ?>/pdf/2016-03closebook.pdf" target="_blank">2016年度貸借対照表（PDF 99KB）</a></td>
 </tr>
 <tr>
 <th>平成27（2015）年度</th>
-<td><a href="<?php $home; ?>/pdf/2015kessan01.pdf" target="_blank">2015年度貸借対照表（PDF 119KB）</a></td>
+<td><a href="<?php echo $home; ?>/pdf/2015kessan01.pdf" target="_blank">2015年度貸借対照表（PDF 119KB）</a></td>
 </tr>
 <tr>
 <th>平成26（2014）年度</th>
-<td><a href="<?php $home; ?>/pdf/2014kessan01.pdf" target="_blank">2014年度貸借対照表（PDF 114KB）</a></td>
+<td><a href="<?php echo $home; ?>/pdf/2014kessan01.pdf" target="_blank">2014年度貸借対照表（PDF 114KB）</a></td>
 </tr>
 </table>
 </div>
@@ -392,7 +392,7 @@ TEL：06-6910-8500&nbsp;&nbsp;/&nbsp;&nbsp;FAX：06-6910-8775</td>
 <h3 class="ttl__h3">賛助会費充当事業報告書</h3>
 <p>「はぐくんでみらいへ」をスローガンに掲げ、豊かな人間関係づくりをめざすハート（HRT:HumanRelationTraining）プログラムや子ども達の「生きる力」を育む自然体験活動、また青少年の抱える課題解決に向けた自立支援事業など、全ての事業は「子ども達一人ひとりが尊重されること」を基本とし、これまでに培ってきた青少年育成の理論をもとに、青少年の主体的な参加と成長を願い、取り組みを進めております。</p>
 <div class="mt-md-4 mt-3 text-md-left text-center">
-<a class="btn btn-primary" href="<?php $home; ?>/pdf/sanjohoukoku.pdf" target="_blank">報告書を読む<i class="fas fa-play-circle"></i></a>
+<a class="btn btn-primary" href="<?php echo $home; ?>/pdf/sanjohoukoku.pdf" target="_blank">報告書を読む<i class="fas fa-play-circle"></i></a>
 </div>
 </div>
 </div>

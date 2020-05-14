@@ -169,8 +169,8 @@ a {
         color: $body-color;
         font-weight: bold;
         @include media-breakpoint-down(md) {
-          font-size: 12px;
-          padding: 1.5em;
+          font-size: 10px;
+          padding: 1.5em $font-size-sm;
         }
         .fas {
           color: $success;
@@ -382,5 +382,11 @@ a {
       width: 100%;
       margin-top: 3rem;
     }
+  }
+}
+
+.text-md-nowrap {
+  @include media-breakpoint-up(md) {
+    white-space: nowrap;
   }
 }

@@ -120,3 +120,28 @@ function my_acf_google_map_api($api)
     return $api;
 }
 add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
+
+function remove_protected($title)
+{
+    return '%s';
+}
+add_filter('protected_title_format', 'remove_protected');
+
+function my_password_form()
+{
+    return '
+<div style="max-width:768px;margin: 0 auto">
+<p class="mt-5">このページはパスワードで保護されています。<br>閲覧するには以下にパスワードを入力してください。</p>
+<form class="post_password" action="'.home_url() .'/wp-login.php?action=postpass" method="post">
+<div class="form-group row">
+<label for="pass" class="col-sm-2 col-form-label">パスワード</label>
+<div class="col-sm-10">
+<input type="password" class="form-control" id="pass" name="post_password">
+</div>
+</div>
+<div class="text-center"><input class="btn btn-secondary" type="submit" value="'.esc_attr__("送信").'"></div>
+</form>
+</div>
+';
+}
+add_filter('the_password_form', 'my_password_form');

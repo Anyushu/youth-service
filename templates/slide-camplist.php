@@ -7,10 +7,12 @@ $times = $wp_url.'/dist/images/icon_times.png';
 ?>
 
 <section class="sec home__camp bg-success">
+
 <div class="container">
-<h2 class="text-center mb-4"><img src="<?php echo $wp_url; ?>/dist/images/ttl_camp_pc.png" alt=""></h2>
+<h2 class="text-center mb-4"><img src="<?php echo $wp_url; ?>/dist/images/ttl_camp_pc.png" alt="キャンプ"></h2>
 <p class="text-white mb-5 text-center">新しいキャンプなどをどんどん企画し、<br>発信していきます。</p>
 </div>
+
 <div class="home__camp__slide camplist">
 <?php
 $args = [
@@ -92,9 +94,9 @@ if ($camp_status !== '終了') {
 <!-- home__camp__slide -->
 <div class="conteiner">
 <div class="home__camp__btn">
-<a class="btn btn-warning" href="">募集中キャンプ一覧を見てみる<i class="fas fa-play-circle"></i></a>
+<a class="btn btn-warning" href="<?php echo $home; ?>/camplist/">募集中キャンプ一覧を見てみる<i class="fas fa-play-circle"></i></a>
 </div>
-<p class="home__camp__blank"><a href="">過去に実施したキャンプはこちら</a></p>
+<p class="home__camp__blank"><a href="<?php echo $p; ?>/camplist_cat/end/">過去に実施したキャンプはこちら</a></p>
 </div>
 </section>
 <!-- home__camp -->

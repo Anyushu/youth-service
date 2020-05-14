@@ -78,11 +78,22 @@ $(function ($) {
   $(".home__camp__slide").slick({
     infinite: true,
     speed: 300,
-    slidesToShow: 1,
+    slidesPerRow: 3,
     centerMode: true,
     centerPadding: "10vw",
     prevArrow: '<span class="home__camp__slide__prevarrow"><i class="fas fa-chevron-left"></i></span>',
     nextArrow: '<span class="home__camp__slide__nextarrow"><i class="fas fa-chevron-right"></i></span>',
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          slidesPerRow: 1,
+          centerPadding: "5vw",
+        },
+      },
+    ],
   });
   $(".home__mv__slide--1").slick({
     arrows: false,
@@ -174,5 +185,51 @@ $(function ($) {
         },
       },
     ],
+  });
+  $(".beginner__loop__1").slick({
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 0,
+    cssEase: "linear",
+    speed: 8000,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    infinite: true,
+    touchMove: false,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+    ],
+  });
+  $(".beginner__loop__2").slick({
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 0,
+    cssEase: "linear",
+    speed: 10000,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    infinite: true,
+    touchMove: false,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+    ],
+  });
+
+  // 遷移
+  $(".send-url").on("change", function () {
+    let url = $(this).val();
+    if (url != "") {
+      location.href = url;
+    }
   });
 });

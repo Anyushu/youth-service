@@ -217,16 +217,22 @@
     &__slide {
       position: relative;
       overflow: hidden;
-      .camplist {
+      .camplist__inner {
+        margin: 0 !important;
+      }
+      .slick-slide {
         box-sizing: border-box;
         padding: 0 5vw;
         @include media-breakpoint-down(md) {
-          padding: 0 2.5vw;
+          padding: 0 2vw;
         }
-        &__inner {
-          &:nth-child(-n + 2) {
-            @include media-breakpoint-down(md) {
-              display: none;
+        .camplist__inner {
+          @include media-breakpoint-up(md) {
+            width: 32% !important;
+          }
+          &:nth-child(2) {
+            @include media-breakpoint-up(md) {
+              margin: 0 2% !important;
             }
           }
         }

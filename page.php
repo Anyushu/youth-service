@@ -19,3 +19,4 @@ if (function_exists('yoast_breadcrumb')) {
 <?php the_content(); ?>
 </div>
 </section>
+<?php get_footer();

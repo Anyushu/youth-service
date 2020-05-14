@@ -6,6 +6,11 @@
     @include media-breakpoint-down(md) {
       height: 40vh;
     }
+    &.login {
+      @include media-breakpoint-down(md) {
+        background-color: $info;
+      }
+    }
     & > img {
       width: 100%;
       height: auto;
@@ -22,7 +27,7 @@
       text-align: center;
       padding: 0 1rem;
       margin: 0;
-      top: 45%;
+      top: 50%;
       left: 0;
       img {
         @include media-breakpoint-down(md) {
@@ -41,6 +46,42 @@
       a,
       span {
         color: $white !important;
+        font-size: 12px;
+      }
+    }
+    &.beginner {
+      z-index: 2;
+      position: relative;
+      overflow: visible;
+      .mv__sub__ttl {
+        height: 85%;
+        top: 60%;
+        transform: translateY(-50%);
+        img {
+          width: auto;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+
+.login {
+  #breadcrumbs {
+    span {
+      color: $success !important;
+      font-size: $font-size-sm;
+      font-weight: bold;
+      @include media-breakpoint-down(md) {
+        font-size: 12px;
+      }
+    }
+    a,
+    .breadcrumb_last {
+      font-size: $font-size-sm;
+      color: $dark !important;
+      font-weight: bold;
+      @include media-breakpoint-down(md) {
         font-size: 12px;
       }
     }

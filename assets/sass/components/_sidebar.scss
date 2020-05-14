@@ -1,0 +1,56 @@
+.sidebar {
+  margin-bottom: 3rem;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+  &__ttl {
+    position: relative;
+    font-size: 1.3rem;
+    font-weight: bold;
+    line-height: normal;
+    box-sizing: border-box;
+    padding-left: 1rem;
+    color: $success;
+    margin-bottom: 1em;
+    span {
+      display: block;
+      text-transform: uppercase;
+      font-size: $font-size-sm;
+      font-family: "Quicksand", sans-serif;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 5px;
+      height: 100%;
+      background-color: $success;
+      border-radius: 10px;
+    }
+  }
+  ul {
+    padding: 0;
+    margin: 0;
+    li {
+      list-style: none;
+      margin-bottom: 1rem;
+      a {
+        font-weight: bold;
+        display: inline-block;
+        vertical-align: middle;
+        color: $body-color;
+        & + i {
+          margin-left: 1rem;
+          font-weight: bold;
+          display: inline-block;
+          vertical-align: middle;
+        }
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

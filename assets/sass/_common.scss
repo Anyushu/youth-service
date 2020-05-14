@@ -10,7 +10,7 @@ main {
 img {
   max-width: 100%;
   height: auto;
-  vertical-align: baseline;
+  vertical-align: bottom;
   border: 0;
 }
 
@@ -18,6 +18,12 @@ p {
   line-height: 1.7;
   @include media-breakpoint-down(md) {
     font-size: $font-size-sm;
+  }
+  a {
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
   }
 }
 
@@ -49,6 +55,11 @@ a {
 .bg-grid {
   background-color: $light;
   background-image: url("../images/bg_grid.png");
+  background-repeat: repeat;
+}
+
+.bg-circle {
+  background-image: url("../images/bg_feature.png");
   background-repeat: repeat;
 }
 
@@ -297,5 +308,28 @@ a {
 .slick-vertical .slick-slide {
   @include media-breakpoint-down(md) {
     margin: 0.25rem 0 !important;
+  }
+}
+
+.towcolumn {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  @include media-breakpoint-down(md) {
+    display: block;
+  }
+  .main {
+    width: 70%;
+    @include media-breakpoint-down(md) {
+      width: 100%;
+    }
+  }
+  .side {
+    width: 25%;
+    @include media-breakpoint-down(md) {
+      width: 100%;
+      margin-top: 3rem;
+    }
   }
 }

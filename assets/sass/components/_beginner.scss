@@ -1,0 +1,150 @@
+.beginner {
+  &__menu {
+    z-index: 2;
+    position: absolute;
+    left: 50%;
+    bottom: -65px;
+    transform: translateX(-50%);
+    max-width: 1200px;
+    width: 100%;
+    box-shadow: 0 0 5px rgba($dark, 0.1);
+    background-color: $white;
+    border-radius: 100px;
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding: 0 2rem;
+    &__inner {
+      a {
+        display: block;
+        box-sizing: border-box;
+        padding: 2rem 1rem;
+        font-size: 0;
+      }
+    }
+  }
+  &__intoro {
+    padding: 200px 0;
+    z-index: 1;
+    & > img {
+      z-index: -1;
+      position: absolute;
+      top: 50%;
+      left: 2.5vw;
+      max-width: 20vw;
+      transform: translateY(-50%);
+      &:last-of-type {
+        left: auto;
+        right: 2.5vw;
+      }
+    }
+  }
+  &__feature {
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      &__inner {
+        position: relative;
+        text-align: center;
+        width: 49%;
+        margin-bottom: 4%;
+        a {
+          position: absolute;
+          bottom: 26.5%;
+          left: 5%;
+          width: 8rem;
+          height: 1rem;
+        }
+      }
+    }
+  }
+  &__loop {
+    font-size: 0;
+  }
+  &__flow {
+    &__list {
+      &__ttl {
+        font-size: 0;
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+      &__first {
+        background-color: $white;
+        box-sizing: border-box;
+        border-radius: 0.5rem;
+        padding: 60px 120px;
+        .beginner__flow__list__inner__no {
+          z-index: 1;
+          position: absolute;
+          top: 0;
+          left: 5%;
+        }
+        &__box {
+          background-color: $info;
+          box-sizing: border-box;
+          padding: 2rem;
+          border-radius: 0.3rem;
+          h4 {
+            color: $success;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+          }
+          p {
+            margin: 0;
+          }
+        }
+      }
+      &__inner {
+        position: relative;
+        margin-bottom: 80px;
+        &__no {
+          z-index: 1;
+          position: absolute;
+          top: 50%;
+          left: 0;
+          transform: translateY(-50%);
+        }
+        &__content {
+          background-color: $white;
+          box-sizing: border-box;
+          border-radius: 0.5rem;
+          padding: 2rem 4rem;
+          max-width: 80%;
+          &__step {
+            display: flex;
+            justify-content: space-between;
+            align-items: stretch;
+            flex-wrap: wrap;
+            &__inner {
+              width: 32%;
+              background-color: $info;
+              border-radius: 0.3rem;
+              box-sizing: border-box;
+              padding: 2.5rem 1rem;
+              & > div {
+                margin: 2rem auto;
+                & > img {
+                  max-height: 62px;
+                  width: auto;
+                }
+              }
+            }
+          }
+        }
+        &.lp .beginner__flow__list__inner__content {
+          margin-left: auto;
+        }
+        &.rp .beginner__flow__list__inner__content {
+          margin-right: auto;
+        }
+        &.rp .beginner__flow__list__inner__no {
+          left: auto;
+          right: 0;
+        }
+      }
+    }
+  }
+}

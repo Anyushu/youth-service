@@ -1,3 +1,11 @@
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
 body {
   position: relative;
   font-family: "Noto Sans JP", sans-serif;

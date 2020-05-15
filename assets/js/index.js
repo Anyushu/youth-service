@@ -7,12 +7,13 @@ import slick from "slick-carousel";
 
 $(function ($) {
   let w = $(window).width();
+  let h = $(window).height();
   let md = 991.98;
+
+  $(".home__mv").css('height', h);
 
   // リサイズ
   $(window).on("load resize", function () {
-    $(".home__mv").css('height', $(this).height());
-
     if (w <= md) {
       $(".img-switch").each(function () {
         $(this).attr("src", $(this).attr("src").replace("_pc", "_sp"));

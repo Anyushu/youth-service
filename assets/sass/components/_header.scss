@@ -92,18 +92,13 @@
     }
     & > div {
       position: relative;
-      -webkit-box-flex: 0;
       flex: none;
       width: 100%;
       height: 2px;
       background: #fefefe;
-      -webkit-transition: all 0.4s ease;
       transition: all 0.4s ease;
-      display: -webkit-box;
       display: flex;
-      -webkit-box-align: center;
       align-items: center;
-      -webkit-box-pack: center;
       justify-content: center;
       &::before,
       &::after {
@@ -115,7 +110,6 @@
         width: 100%;
         height: 2px;
         background: inherit;
-        -webkit-transition: all 0.4s ease;
         transition: all 0.4s ease;
       }
       &::after {
@@ -132,18 +126,11 @@
     pointer-events: none;
     visibility: hidden;
     overflow: hidden;
-    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     outline: 1px solid transparent;
-    display: -webkit-box;
     display: flex;
-    -webkit-box-align: center;
     align-items: center;
-    -webkit-box-pack: center;
     justify-content: center;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-transition-duration: 0.75s;
     transition-duration: 0.75s;
     &__inner {
       width: 200vw;
@@ -151,20 +138,13 @@
       color: $white;
       background-color: $success;
       border-radius: 50%;
-      -webkit-transition: all 0.4s ease;
       transition: all 0.4s ease;
-      -webkit-box-flex: 0;
       flex: none;
-      -webkit-transform: scale(0);
       transform: scale(0);
-      -webkit-backface-visibility: hidden;
       backface-visibility: hidden;
       overflow: hidden;
-      display: -webkit-box;
       display: flex;
-      -webkit-box-align: center;
       align-items: center;
-      -webkit-box-pack: center;
       justify-content: center;
       @include media-breakpoint-down(md) {
         width: 400vw;
@@ -173,7 +153,6 @@
       & > div {
         max-height: 100vh;
         opacity: 0;
-        -webkit-transition: opacity 0.4s ease;
         transition: opacity 0.4s ease;
         overflow-y: auto;
         @include media-breakpoint-down(md) {
@@ -327,13 +306,10 @@
   pointer-events: auto;
   visibility: visible;
   .outermenu__wrap__inner {
-    -webkit-transform: scale(1);
     transform: scale(1);
-    -webkit-transition-duration: 0.75s;
     transition-duration: 0.75s;
     & > div {
       opacity: 1;
-      -webkit-transition: opacity 0.4s ease 0.4s;
       transition: opacity 0.4s ease 0.4s;
     }
   }

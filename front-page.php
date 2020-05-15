@@ -9,6 +9,7 @@ get_header(); ?>
 <p class="text-center"><img class="w-100 animate__animated animate__bounce animate__delay-2s" src="<?php echo $wp_url; ?>/dist/images/mv_copy_pc.png" alt="今しかできない" srcset="<?php echo $wp_url; ?>/dist/images/mv_copy_pc.png 1x, <?php echo $wp_url; ?>/dist/images/mv_copy_pc@2x.png 2x"></p>
 <p class="mb-0 home__mv__copy__txt">ユースサービス大阪はキャンプやスキーなど<br>子ども達のたくさんの笑顔に出会える楽しいプランを提供し、<br>こころ豊かで健やかな成⻑を⽀援しています。</p>
 </div>
+</div>
 <!-- swiper -->
 <div class="home__mv__slide--1">
 <?php for ($i=1; $i <= 8; $i++): ?>
@@ -29,7 +30,6 @@ get_header(); ?>
 <?php for ($i=25; $i <= 32; $i++): ?>
 <div><img src="<?php echo $wp_url; ?>/dist/images/img_<?php echo $i; ?>.png" alt="スライダー<?php echo $i; ?>"></div>
 <?php endfor; ?>
-</div>
 </div>
 <img class="img-switch w-100" src="<?php echo $wp_url; ?>/dist/images/bg_read_top_pc.png" alt="装飾">
 </div>

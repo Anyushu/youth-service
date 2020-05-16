@@ -64,7 +64,7 @@ get_header(); ?>
 </section>
 <!-- menu1 -->
 
-<div id="menu2">
+<div id="menu2" class="mb-n5">
 <?php get_template_part('templates/slide-camplist'); ?>
 </div>
 <!-- menu2 -->

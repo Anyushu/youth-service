@@ -232,7 +232,8 @@
       width: 3.5rem;
       right: 1rem;
     }
-    p {
+    &-label {
+      display: block;
       position: absolute;
       bottom: 0.75rem;
       line-height: 1;

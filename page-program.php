@@ -392,5 +392,114 @@ if (function_exists('yoast_breadcrumb')) {
 <!-- program__flow__box -->
 </div>
 </section>
-
+<!-- submenu4 -->
+<section id="submenu5" class="sec program__voice bg-success">
+<div class="container">
+<h2 class="ttl__h2 white">
+<span class="quicksand">VOICE</span>
+<span>利用者の声</span>
+</h2>
+<h3 class="ttl-h4">引率者の声</h3>
+</div>
+<div class="voice__list">
+<div class="voice__list__inner">
+<div class="text-center mb-3"><img class="mx-auto" src="<?php echo $wp_url; ?>/dist/images/icon_teacher.png" alt="アイコン"></div>
+<p>失敗から学ぶことが大事。人間関係のこじれや問題が起きたとき、それを修復する「チャンス」と考えるか「逃げる」かでその後の人間関係の築き方が大きく変わる、ということがわかった。</p>
+<div class="voice__list__inner__meta">
+<p class="voice__list__inner__meta__name">（大学教員）</p>
+</div>
+</div>
+<div class="voice__list__inner">
+<div class="text-center mb-3"><img class="mx-auto" src="<?php echo $wp_url; ?>/dist/images/icon_teacher.png" alt="アイコン"></div>
+<p>この合宿を通して、数年来の人間関係が改善された生徒や、普段前に出ない生徒が周囲の手助けを積極的に行っていた。また、周囲も頼りにしていた。</p>
+<div class="voice__list__inner__meta">
+<p class="voice__list__inner__meta__name">（高校教員）</p>
+</div>
+</div>
+<div class="voice__list__inner">
+<div class="text-center mb-3"><img class="mx-auto" src="<?php echo $wp_url; ?>/dist/images/icon_teacher.png" alt="アイコン"></div>
+<p>学校生活ではあまり表に出たがらない生徒が、アクティビティーの中で意見を出してグループをリードする姿があちこちで見られたことが非常に意義深かった。自分の意見を表明することの大切さを全員が学んだ。</p>
+<div class="voice__list__inner__meta">
+<p class="voice__list__inner__meta__name">（高校教員）</p>
+</div>
+</div>
+</div>
+<!-- voice__list -->
+</section>
+<!-- program__voice -->
+<section class="sec program__voice2">
+<div class="container">
+<h3 class="ttl-h4">参加者の声</h3>
+</div>
+<div class="voice__list">
+<div class="voice__list__inner">
+<div class="text-center mb-3"><img class="mx-auto" src="<?php echo $wp_url; ?>/dist/images/icon_student.png" alt="アイコン"></div>
+<p>最初は、皆と協力するのが苦手なわたしにとってゆううつな時間でした。でも徐々に身体を動かしていくことによって、他人と協力することの大切さ、人と人が意見を交わして生まれる温かさが、なんとなくわかったような気がします。ハートプログラムが終わった時には、皆が心の底から笑えたような気がしました。人と人との意見の交換がこんなに温かいものだということを知りました。</p>
+<div class="voice__list__inner__meta">
+<p class="voice__list__inner__meta__name">（中学生）</p>
+</div>
+</div>
+<div class="voice__list__inner">
+<div class="text-center mb-3"><img class="mx-auto" src="<?php echo $wp_url; ?>/dist/images/icon_student.png" alt="アイコン"></div>
+<p>３日間でこんなに信頼できる友達ができてよかった。自分自身を振り返ることができ、自分のやるべきこと、自分に合っていることなど理解できた。先輩は本当に私たちのことを考えてくれているのだと感じた。私は先輩みたいになりたいと思った。</p>
+<div class="voice__list__inner__meta">
+<p class="voice__list__inner__meta__name">（新入生体験学習参加学生）</p>
+</div>
+</div>
+<div class="voice__list__inner">
+<div class="text-center mb-3"><img class="mx-auto" src="<?php echo $wp_url; ?>/dist/images/icon_student.png" alt="アイコン"></div>
+<p>失敗したのも、成功したのも、考えて→意見を出し合って→実行しての繰り返しがあったからだと思う。本当は心で思っていることを声に出していければいいな、と思う。</p>
+<div class="voice__list__inner__meta">
+<p class="voice__list__inner__meta__name">（企業研修参加者）</p>
+</div>
+</div>
+</div>
+<!-- voice__list -->
+</section>
+<!-- submenu5 -->
+<section id="submenu6" class="sec program__case">
+<div class="container">
+<h2 class="ttl__h2">
+<span class="quicksand">CASE</span>
+<span>様々な実施例</span>
+</h2>
+<p>ハートプログラム（ＨＲＴ）は、多様なニーズにお応えできます。小学生から、中学・高校生・大学・専門学校生、社会人といった幅広い年齢層に実施されています。</p>
+<div class="program__case__list">
+<div class="program__case__list__inner">
+<div class="program__case__list__inner__wrap">
+<div class="program__case__list__inner__wrap-icon"><img src="<?php echo $wp_url; ?>/dist/images/icon_camping.png" alt="アイコン"></div>
+<h3 class="program__case__list__inner__wrap-ttl">新入生・新入社員<br>オリエンテーション合宿研修</h3>
+<p>大学、専門学校、企業などにおける「導入教育」として、入学・入社後の早い時期に自然環境豊かなフィールドで１～２泊の合宿生活を送り、ハートプログラムやアウトドアプログラムを通して、人間関係づくりに取り組んでいます。</p>
+</div>
+</div>
+<!-- program__case__list__inner -->
+<div class="program__case__list__inner">
+<div class="program__case__list__inner__wrap">
+<div class="program__case__list__inner__wrap-icon"><img src="<?php echo $wp_url; ?>/dist/images/icon_school.png" alt="アイコン"></div>
+<h3 class="program__case__list__inner__wrap-ttl">中一ギャップを<br>解消するための学校行事</h3>
+<p>期待と共に不安感を抱えて「一つの中学校」に進学した新中学一年生を対象に、不安感を解消し、これからの中学校生活に早期に慣れるため、クラス担任と共に「クラス内での豊かな人間関係」を築く機会として、「ハートプログラム」を、学校や校外学習などで実施しています。</p>
+</div>
+</div>
+<!-- program__case__list__inner -->
+<div class="program__case__list__inner">
+<div class="program__case__list__inner__wrap">
+<div class="program__case__list__inner__wrap-icon"><img src="<?php echo $wp_url; ?>/dist/images/icon_finance.png" alt="アイコン"></div>
+<h3 class="program__case__list__inner__wrap-ttl">学校でのクラス委員、<br>クラブ主将、クラブの選手</h3>
+<p>意欲ある生徒・学生に対し、集団体験活動を提供し、チームワークを高め、リーダーシップ発揮を目指すことで、よりよい学校づくりに意欲的に取り組む学内リーダーを養成しています。</p>
+</div>
+</div>
+<!-- program__case__list__inner -->
+<div class="program__case__list__inner">
+<div class="program__case__list__inner__wrap">
+<div class="program__case__list__inner__wrap-icon"><img src="<?php echo $wp_url; ?>/dist/images/icon_review.png" alt="アイコン"></div>
+<h3 class="program__case__list__inner__wrap-ttl">児童・生徒とのコミュニケーション<br>を豊かにする能力を学ぶ研修</h3>
+<p>教員初任者研修、同じ中学校区の小中教員合同研修、人権教育を推進する立場の教職員などに対し、児童・生徒の理解を深め、よりよい人間関係作りの手法を体験的に学びます。</p>
+</div>
+</div>
+<!-- program__case__list__inner -->
+</div>
+<!-- program__case__list -->
+</div>
+</section>
+<!-- submenu6 -->
 <?php get_footer();

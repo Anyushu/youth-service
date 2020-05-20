@@ -32,7 +32,7 @@ $wp_url = get_template_directory_uri(); ?>
 <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
 <label for="navi-toggle" class="navigation__button">
 <span class="navigation__icon">&nbsp;</span>
-<p>MENU</p>
+<span class="navigation__button-label">MENU</span>
 </label>
 <div class="navigation__background">&nbsp;</div>
 <nav class="navigation__nav">
@@ -53,6 +53,7 @@ $wp_url = get_template_directory_uri(); ?>
 <a class="d-md-block d-none" href="<?php echo $home; ?>/news/"><i class="fas fa-chevron-circle-right text-success mr-2"></i>新着情報</a>
 <a class="d-md-block d-none" href="<?php echo $home; ?>/about/"><i class="fas fa-chevron-circle-right text-success mr-2"></i>団体概要</a>
 <a class="d-md-block d-none" href="<?php echo $home; ?>/recruit/"><i class="fas fa-chevron-circle-right text-success mr-2"></i>採用情報</a>
+<a class="d-md-block d-none" href="<?php echo $home; ?>/leader/"><i class="fas fa-chevron-circle-right text-success mr-2"></i>アウトドアリーダー</a>
 
 <a class="d-md-none" href="<?php echo $home; ?>/beginner/"><i class="fas fa-chevron-circle-right text-success mr-2"></i>はじめての方へ</a>
 <a class="d-md-none" href="<?php echo $home; ?>/news/"><i class="fas fa-chevron-circle-right text-success mr-2"></i>新着情報</a>
@@ -60,6 +61,7 @@ $wp_url = get_template_directory_uri(); ?>
 <a class="d-md-none" href="<?php echo $home; ?>/about/"><i class="fas fa-chevron-circle-right text-success mr-2"></i>団体概要</a>
 <a class="d-md-none" href="<?php echo $home; ?>/status/login/"><i class="fas fa-chevron-circle-right text-success mr-2"></i>ご入金・参加カード提出確認</a>
 <a class="d-md-none" href="<?php echo $home; ?>/recruit/"><i class="fas fa-chevron-circle-right text-success mr-2"></i>採用情報</a>
+<a class="d-md-none" href="<?php echo $home; ?>/leader/"><i class="fas fa-chevron-circle-right text-success mr-2"></i>アウトドアリーダー</a>
 </div>
 <div class="outermenu__wrap__inner__box__bottom">
 <div class="footer__about__logo__link">

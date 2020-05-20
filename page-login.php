@@ -1,6 +1,42 @@
 <?php
 $home = esc_url(home_url());
 $wp_url = get_template_directory_uri();
+
+$send_url = $home.'/status/';
+if (isset($_GET['status-no']) && $_GET['status-code'] && $_GET['status-no'] != null && $_GET['status-code'] != null) {
+    $status_no = $_GET['status-no'];
+    $status_code = $_GET['status-code'];
+    $camp_code = '';// キャンプコード
+    $camp_name = '';// キャンプ名
+    $camp_fee = '';// ご入金
+    $camp_card = '';// 参加カード提出
+    $args = [
+        'posts_per_page' => 1,
+        'post_type' => 'fee_status',
+        'meta_query' => [
+            [
+                'key' => 'status_num',
+                'value' => $status_no,
+            ],
+            [
+                'key' => 'status_code',
+                'value' => $status_code,
+            ]
+        ]
+    ];
+    $posts = get_posts($args);
+    if (count($posts) === 0) {
+        $flag = false;
+    } else {
+        $flag = true;
+    }
+    wp_reset_postdata();
+    if ($flag) {
+        header('Location: '.$send_url.'?status-no='.$status_no.'&status-code='.$status_code);
+        exit;
+    }
+}
+
 get_header(); ?>
 <section class="mv__sub login">
 <img class="w-100" src="<?php echo $wp_url; ?>/dist/images/bg_low_status.png" alt="<?php the_title(); ?>">
@@ -25,8 +61,11 @@ if (function_exists('yoast_breadcrumb')) {
 <section class="sec login__form">
 <div class="container">
 <div class="login__form__wrap">
-<form class="login__form__inner" action="<?php echo $home; ?>/status/" method="get">
+<form class="login__form__inner" action="" method="get">
 <h3 class="ttl__h3">提出確認フォーム</h3>
+<?php if(isset($flag)): ?>
+<div class="my-3 text-danger">確認番号とキャンプコードをご確認の上再度ご入力ください。</div>
+<?php endif; ?>
 <div class="ol__form__table">
 <table class="table table-borderless w-100">
 <tbody>

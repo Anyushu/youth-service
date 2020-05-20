@@ -36,8 +36,8 @@ $gallery_camp_url = get_field('gallery_camp_url');
 <p class="gallery__list__inner__ttl"><?php echo $t; ?></p>
 <p class="gallery__list__inner__days"><i class="far fa-calendar-alt text-success mr-2"></i><?php echo $gallery_days; ?></p>
 <div class="gallery__list__inner__btns">
-<a class="btn btn-secondary" href="<?php echo $gallery_camp_url; ?>">キャンプの様子<i class="fas fa-play-circle"></i></a>
-<a class="btn btn-primary" href="<?php echo $p; ?>">参加者専用写真コーナー<i class="fas fa-play-circle"></i></a>
+<a class="btn btn-secondary" href="<?php echo $p; ?>">キャンプの様子<i class="fas fa-play-circle"></i></a>
+<a class="btn btn-primary" href="<?php echo $gallery_camp_url; ?>">参加者専用写真コーナー<i class="fas fa-play-circle"></i></a>
 </div>
 </li>
 <?php endwhile; endif; ?>

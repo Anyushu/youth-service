@@ -122,7 +122,7 @@ if ($camp_status !== '終了') {
 </tr>
 <?php if(get_field('camp_hp')): ?>
 <tr>
-<th class="text-nowrap">住所</th>
+<th class="text-nowrap">施設HP</th>
 <td><a href="<?php the_field('camp_hp'); ?>"><?php the_field('camp_hp'); ?></a></td>
 </tr>
 <?php endif; ?>

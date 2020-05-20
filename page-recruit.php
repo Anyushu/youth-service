@@ -152,9 +152,11 @@ yoast_breadcrumb('<div id="breadcrumbs"><div class="container">', '</div></div>'
 <span class="quicksand">Schedule</span>
 <span>採用スケジュール</span>
 </h2>
+<?php if (get_field('recruit_flag') == false): ?>
 <div class="schedule__danger">
 <p><img src="<?php echo $wp_url; ?>/dist/images/icon_check_red.png" alt="アイコン">今回の募集は終了いたしました</p>
 </div>
+<?php endif; ?>
 <!-- schedule__danger -->
 <div class="table-wrap">
 <table class="table w-100">

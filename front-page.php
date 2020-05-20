@@ -11,26 +11,15 @@ get_header(); ?>
 </div>
 </div>
 <!-- swiper -->
-<div class="home__mv__slide--1">
-<?php for ($i=1; $i <= 8; $i++): ?>
-<div><img src="<?php echo $wp_url; ?>/dist/images/img_<?php echo $i; ?>.png" alt="スライダー<?php echo $i; ?>"></div>
-<?php endfor; ?>
+<?php for ($i=1; $i <= 4; $i++): ?>
+<div class="home__mv__slide--<?php echo $i; ?>">
+<?php
+$mv_pics = SCF::get('mv_pics_'.$i);
+foreach ($mv_pics as $key => $val): ?>
+<div><img src="<?php echo wp_get_attachment_url($val['mv_pics_'.$i.'_val']); ?>" alt="スライダー"></div>
+<?php endforeach; ?>
 </div>
-<div class="home__mv__slide--2">
-<?php for ($i=9; $i <= 16; $i++): ?>
-<div><img src="<?php echo $wp_url; ?>/dist/images/img_<?php echo $i; ?>.png" alt="スライダー<?php echo $i; ?>"></div>
 <?php endfor; ?>
-</div>
-<div class="home__mv__slide--3">
-<?php for ($i=17; $i <= 24; $i++): ?>
-<div><img src="<?php echo $wp_url; ?>/dist/images/img_<?php echo $i; ?>.png" alt="スライダー<?php echo $i; ?>"></div>
-<?php endfor; ?>
-</div>
-<div class="home__mv__slide--4">
-<?php for ($i=25; $i <= 32; $i++): ?>
-<div><img src="<?php echo $wp_url; ?>/dist/images/img_<?php echo $i; ?>.png" alt="スライダー<?php echo $i; ?>"></div>
-<?php endfor; ?>
-</div>
 <img class="img-switch w-100" src="<?php echo $wp_url; ?>/dist/images/bg_read_top_pc.png" alt="装飾">
 </div>
 <!-- mv -->

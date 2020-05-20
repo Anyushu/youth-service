@@ -96,7 +96,7 @@ if ($camp_status !== '終了') {
 <div class="home__camp__btn">
 <a class="btn btn-warning" href="<?php echo $home; ?>/camplist/">募集中キャンプ一覧を見てみる<i class="fas fa-play-circle"></i></a>
 </div>
-<p class="home__camp__blank"><a href="<?php echo $p; ?>/camplist_cat/end/">過去に実施したキャンプはこちら</a></p>
+<p class="home__camp__blank"><a href="<?php echo $home; ?>/camplist_cat/end/">過去に実施したキャンプはこちら</a></p>
 </div>
 </section>
 <!-- home__camp -->

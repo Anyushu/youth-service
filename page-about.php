@@ -129,10 +129,10 @@ TEL：06-6910-8500&nbsp;&nbsp;/&nbsp;&nbsp;FAX：06-6910-8775</td>
 末岡 祥弘（学校法人大阪ＹＭＣＡ理事⻑）<br>
 </td>
 </tr>
-<!-- <tr>
+<tr>
 <th>役員報酬について</th>
-<td><a href="">役員報酬表を見る</a></td>
-</tr> -->
+<td><a href="<?php echo $home; ?>/pdf/" target="_blank">役員報酬表を見る</a></td>
+</tr>
 </table>
 </div>
 </div>
@@ -152,10 +152,10 @@ TEL：06-6910-8500&nbsp;&nbsp;/&nbsp;&nbsp;FAX：06-6910-8775</td>
 <p class="mt-3 mb-0 text-right"><a class="more-txt" href="https://goo.gl/maps/PF6eXwBVZoF7Vc8c7" target="_blank">Google Mapで見る<i class="fas fa-play-circle text-success ml-1"></i></a></p>
 </div>
 <div class="about__access__map__inner">
-<div>
-<a href="<?php echo $wp_url; ?>/dist/images/map.png" target="_blank"><img src="<?php echo $wp_url; ?>/dist/images/map.png" alt="地図"></a>
+<div data-toggle="modal" data-target="#illust-map">
+<img src="<?php echo $wp_url; ?>/dist/images/map.png" alt="地図">
 </div>
-<p class="mt-3 mb-0 text-right">クッリクで拡大します</p>
+<p class="mt-3 mb-0 text-right">クリックで拡大する</p>
 </div>
 </div>
 <!-- about__access__map -->
@@ -444,4 +444,21 @@ TEL：06-6910-8500&nbsp;&nbsp;/&nbsp;&nbsp;FAX：06-6910-8775</td>
 <!-- about__member__inner -->
 </div>
 </section>
+
+
+<!-- Modal -->
+<div class="modal fade" id="illust-map" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+</div>
+<div class="modal-body">
+<img class="w-100" src="<?php echo $wp_url; ?>/dist/images/map.png" alt="地図">
+</div>
+</div>
+</div>
+</div>
 <?php get_footer();

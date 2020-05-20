@@ -269,6 +269,12 @@
         }
       }
     }
+    .beginner__faq__list__inner__ttl {
+      padding-right: 1rem;
+    }
+    .beginner__faq__list__inner__ttl > span {
+      padding: 0;
+    }
   }
   &__box {
     max-width: 90%;

@@ -245,7 +245,7 @@ YMCA阿南海洋センター・国立淡路⻘少年交流の家・大阪府立�
 </tr>
 <tr>
 <th class="text-md-nowrap">アウトドアリーダー用Instagram</th>
-<td><a href="https://www.instagram.com/yso̲camp/" target="_blank">Instagramへ</a></td>
+<td><a href="https://www.instagram.com/youth_service_leader/" target="_blank">Instagramへ</a></td>
 </tr>
 </table>
 </div>

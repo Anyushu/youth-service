@@ -48,6 +48,14 @@ a {
   }
 }
 
+select {
+  border: 0;
+  background-color: #eeeeee;
+  box-sizing: border-box;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+}
+
 [data-toggle="modal"] {
   cursor: pointer;
 }

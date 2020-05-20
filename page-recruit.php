@@ -33,62 +33,7 @@ yoast_breadcrumb('<div id="breadcrumbs"><div class="container">', '</div></div>'
 <span>募集要項</span>
 </h2>
 <div class="table-wrap">
-<table class="table w-100">
-<tr>
-<th class="text-nowrap">雇用形態</th>
-<td>契約職員（正規職員への転換制度あり）<br>
-六箇月間の試用期間中の勤務成績と適性により転換採用試験を行い、正規職員採用を判定します。</td>
-</tr>
-<tr>
-<th class="text-nowrap">募集人数</th>
-<td>若干名</td>
-</tr>
-<tr>
-<th class="text-nowrap">採用期日</th>
-<td>令和2(2020)年4月1日（水）</td>
-</tr>
-<tr>
-<th class="text-nowrap">契約期間</th>
-<td>令和2(2020)年4月1日（水）～令和3(2021)年3月31日（水）<br>
-※ただし採用後六箇月間の勤務成績と適性により正規職員転換採用試験を行います。</td>
-</tr>
-<tr>
-<th class="text-nowrap">勤務場所</th>
-<td>当財団事務局及び運営青少年活動施設</td>
-</tr>
-<tr>
-<th class="text-nowrap">従事業務</th>
-<td>青少年健全育成事業の実施に係る業務及び施設管理運営業務</td>
-</tr>
-<tr>
-<th class="text-nowrap">応募条件</th>
-<td>令和2(2020)年3月に四年制大学を卒業見込み、または既卒の方で、普通自動車運転免許を有する方</td>
-</tr>
-<tr>
-<th class="text-nowrap">選考方法</th>
-<td>書類選考のうえ、筆記（一般常識、小論文）及び面接試験</td>
-</tr>
-<tr>
-<th class="text-nowrap">勤務形態</th>
-<td>週休２日制（ローテーション勤務、部所により年間変形労働制）</td>
-</tr>
-<tr>
-<th class="text-nowrap">有給休暇</th>
-<td>労働基準法に定める通り</td>
-</tr>
-<tr>
-<th class="text-nowrap">有給休暇</th>
-<td>基本給180,000円<br>
-※ただし試用期間後正規職員に転換すれば、200,000円程度<br>
-昇給あり<br>
-賞与あり（ただし業績による）<br>
-退職金なし（ただし、正規職員転換後はあり）<br>
-社会保険あり<br>
-労働保険あり<br>
-通勤手当あり（上限月額50,000円）<br>
-試用期間六箇月</td>
-</tr>
-</table>
+<?php the_field('recruit_table_1'); ?>
 </div>
 </div>
 </section>
@@ -159,22 +104,7 @@ yoast_breadcrumb('<div id="breadcrumbs"><div class="container">', '</div></div>'
 <?php endif; ?>
 <!-- schedule__danger -->
 <div class="table-wrap">
-<table class="table w-100">
-<tr>
-<th class="text-nowrap">応募受付</th>
-<td>令和元(2019)年9月2日(月)～9月13日（金）午後5時まで（必着）<br>
-受験を希望する方は、あらかじめ電話連絡のうえ応募書類をご持参、または郵送ください。</td>
-</tr>
-<tr>
-<th class="text-nowrap">採用試験</th>
-<td>令和元(2019)年9月21日(土)大阪市内で実施<br>
-（時間・場所等は応募者に後日詳細を通知）</td>
-</tr>
-<tr>
-<th class="text-nowrap">結果発表</th>
-<td>令和元(2019)年9月27日(金)結果発送（書留）</td>
-</tr>
-</table>
+<?php the_field('recruit_table_2'); ?>
 </div>
 </div>
 </section>

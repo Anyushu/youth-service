@@ -51,7 +51,7 @@ $wp_url = get_template_directory_uri(); ?>
 <div class="fixed_btn">
 <a class="d-md-none" href="tel:0665617800"><img src="<?php echo $wp_url; ?>/dist/images/btn_fix_tel.png" alt="アイコン"></a>
 <a href="https://www.facebook.com/yso.or.jp" target="_blank"><img src="<?php echo $wp_url; ?>/dist/images/btn_instagram.png" alt="アイコン"></a>
-<a href="https://www.instagram.com/yso̲camp/" target="_blank"><img src="<?php echo $wp_url; ?>/dist/images/btn_facebook.png" alt="アイコン"></a>
+<a href="https://www.instagram.com/yso_camp/" target="_blank"><img src="<?php echo $wp_url; ?>/dist/images/btn_facebook.png" alt="アイコン"></a>
 </div>
 
 <?php wp_footer(); ?>

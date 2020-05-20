@@ -1,5 +1,8 @@
 <?php
 
+update_option('siteurl', 'https://tesuto.site/youthservice/');
+update_option('home', 'https://tesuto.site/youthservice/');
+
 // アイキャッチ設定
 add_theme_support('post-thumbnails');
 
@@ -100,7 +103,7 @@ function twpp_enqueue_styles()
         'main-style',
         get_template_directory_uri().'/dist/css/style.css',
         [],
-        '1.0.０',
+        '1.0.2',
         'all'
     );
 }
@@ -109,14 +112,13 @@ add_action('wp_enqueue_scripts', 'twpp_enqueue_styles');
 // JSの管理
 function add_my_scripts()
 {
-    wp_enqueue_script('base-script', get_template_directory_uri().'/dist/js/bundle.js', [], '1.0.０', true);
-    wp_enqueue_script('ajaxzip3', 'https://ajaxzip3.github.io/ajaxzip3.js', array('jquery'), '', true);
+    wp_enqueue_script('base-script', get_template_directory_uri().'/dist/js/bundle.js', [], '1.0.2', true);
 }
 add_action('wp_enqueue_scripts', 'add_my_scripts');
 
 function my_acf_google_map_api($api)
 {
-    $api['key'] = '';
+    $api['key'] = 'AIzaSyA5_k_xrwR0k-bvx3iUeIawpfzof2Br1Pg';
     return $api;
 }
 add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
@@ -149,7 +151,7 @@ add_filter('the_password_form', 'my_password_form');
 /* PRE_GET_POSTS */
 function customize_main_query($query)
 {
-    if (! is_admin() || $query->is_main_query()) {
+    if (!is_admin() && $query->is_main_query()) {
         if ($query->is_archive()) {
             $query->set('has_password', false);
         }

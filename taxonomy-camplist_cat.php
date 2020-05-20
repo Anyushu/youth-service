@@ -176,7 +176,7 @@ if ($camp_status !== '終了') {
 </div>
 <!-- camplist -->
 <div class="home__camp__btn">
-<a class="btn btn-warning" href="">終了したキャンプを見る<i class="fas fa-play-circle"></i></a>
+<a class="btn btn-warning" href="<?php echo $home; ?>/camplist_cat/end/">終了したキャンプを見る<i class="fas fa-play-circle"></i></a>
 </div>
 </div>
 </section>

@@ -131,7 +131,7 @@ TEL：06-6910-8500&nbsp;&nbsp;/&nbsp;&nbsp;FAX：06-6910-8775</td>
 </tr>
 <tr>
 <th>役員報酬について</th>
-<td><a href="<?php echo $home; ?>/pdf/" target="_blank">役員報酬表を見る</a></td>
+<td><a href="<?php echo $home; ?>/pdf/yakuin-hoshu.pdf" target="_blank">役員報酬表を見る</a></td>
 </tr>
 </table>
 </div>
@@ -147,7 +147,7 @@ TEL：06-6910-8500&nbsp;&nbsp;/&nbsp;&nbsp;FAX：06-6910-8775</td>
 <div class="about__access__map">
 <div class="about__access__map__inner">
 <div>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.4379474605853!2d135.48572741471682!3d34.66889479242978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e79c67d0c021%3A0x4faa032619857d35!2z44Om44O844K544K144O844OT44K55aSn6Ziq77yI5LiA6Iis6LKh5Zuj5rOV5Lq65aSn6Ziq5bqc6Z2S5bCR5bm05rS75YuV6LKh5Zuj77yJ!5e0!3m2!1sja!2sjp!4v1589181986207!5m2!1sja!2sjp"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.4379474605853!2d135.48572741471682!3d34.66889479242978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e79c67d0c021%3A0x4faa032619857d35!2z44Om44O844K544K144O844OT44K55aSn6Ziq77yI5LiA6Iis6LKh5Zuj5rOV5Lq65aSn6Ziq5bqc6Z2S5bCR5bm05rS75YuV6LKh5Zuj77yJ!5e0!3m2!1sja!2sjp!4v1589980515124!5m2!1sja!2sjp"></iframe>
 </div>
 <p class="mt-3 mb-0 text-right"><a class="more-txt" href="https://goo.gl/maps/PF6eXwBVZoF7Vc8c7" target="_blank">Google Mapで見る<i class="fas fa-play-circle text-success ml-1"></i></a></p>
 </div>
@@ -173,27 +173,27 @@ TEL：06-6910-8500&nbsp;&nbsp;/&nbsp;&nbsp;FAX：06-6910-8775</td>
 <div class="about__access__other__inner">
 <p><span class="font-weight-bold text-success">吉野宮滝野外学校</span>
 <br>〒639-3443 奈良県吉野郡吉野町宮滝101-1<span class="tel">TEL 0746-39-9136</span></p>
-<p><a class="more-txt" href="http://www.yso-yoshinomiyataki.jp/index.html" target="_blank">詳しく見る<i class="fas fa-play-circle text-success ml-1"></i></a></p>
+<p><a class="more-txt" href="<?php echo $home; ?>/facility/yoshino/">詳しく見る<i class="fas fa-play-circle text-success ml-1"></i></a></p>
 </div>
 <div class="about__access__other__inner">
 <p><span class="font-weight-bold text-success">箕⾯市立⻘少年教学の森野外活動センター</span>
 <br>〒562-0005 箕⾯市新稲2-257-3<span class="tel">TEL 072-722-8110</span></p>
-<p><a class="more-txt" href="https://www.yso.or.jp/minoh.html" target="_blank">詳しく見る<i class="fas fa-play-circle text-success ml-1"></i></a></p>
+<p><a class="more-txt" href="<?php echo $home; ?>/facility/mino/">詳しく見る<i class="fas fa-play-circle text-success ml-1"></i></a></p>
 </div>
 <div class="about__access__other__inner">
 <p><span class="font-weight-bold text-success">東大阪市立野外活動センター「自由の森なるかわ」</span>
 <br>〒579-8061 東大阪市六万寺町1-1668<span class="tel">TEL 072-986-1551</span></p>
-<p><a class="more-txt" href="http://camp-narukawa.com/" target="_blank">詳しく見る<i class="fas fa-play-circle text-success ml-1"></i></a></p>
+<p><a class="more-txt" href="<?php echo $home; ?>/facility/higashi/">詳しく見る<i class="fas fa-play-circle text-success ml-1"></i></a></p>
 </div>
 <div class="about__access__other__inner">
 <p><span class="font-weight-bold text-success">大阪府立少年自然の家</span>
 <br>〒597-0102 ⾙塚市⽊積字秋⼭⻑尾3350<span class="tel">TEL 072-478-8331</span></p>
-<p><a class="more-txt" href="http://shizen.osaka-yha.or.jp/" target="_blank">詳しく見る<i class="fas fa-play-circle text-success ml-1"></i></a></p>
+<p><a class="more-txt" href="<?php echo $home; ?>/facility/shizen/">詳しく見る<i class="fas fa-play-circle text-success ml-1"></i></a></p>
 </div>
 <div class="about__access__other__inner">
 <p><span class="font-weight-bold text-success">大阪府立男⼥共同参画・⻘少年センター（ドーンセンター）</span>
 <br>〒540-0008 大阪市中央区大手前1-3-49<span class="tel">TEL 06-6910-8500</span></p>
-<p><a class="more-txt" href="https://www.dawncenter.jp/" target="_blank">詳しく見る<i class="fas fa-play-circle text-success ml-1"></i></a></p>
+<p><a class="more-txt" href="<?php echo $home; ?>/facility/dawncenter/">詳しく見る<i class="fas fa-play-circle text-success ml-1"></i></a></p>
 </div>
 </div>
 <!-- about__access__other -->

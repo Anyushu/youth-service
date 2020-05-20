@@ -56,14 +56,18 @@ for ($i=1; $i <= 5; $i++) {
 if ($camp_status == '受付中') {
     $bg_status = 'circle';
     $status_img = $circle;
+    $form_flag = true;
 } elseif ($camp_status == '残りわずか') {
     $bg_status = 'try';
     $status_img = $try;
+    $form_flag = true;
 } elseif ($camp_status == 'キャンセル待ち') {
     $bg_status = 'times';
     $status_img = $times;
+    $form_flag = false;
 } else {
     $bg_status = 'end';
+    $form_flag = false;
 }
 ?>
 <section class="sec">
@@ -190,7 +194,9 @@ if ($camp_status !== '終了') {
 </span>
 <script type="text/javascript" src="//seal.globalsign.com/SiteSeal/gmogs_image_115-57_ja.js" defer="defer"></script>
 </div>
+<?php endif; ?>
 <!-- camplist__post__ssl -->
+<?php if ($camp_status == '受付中' || $camp_status == '残りわずか'): ?>
 <div class="camplist__post__btns">
 <div class="mr-md-4 mb-md-0 mb-4">
 <p class="text-center small mb-2">ホームページからお申込みの方</p>
@@ -202,10 +208,10 @@ if ($camp_status !== '終了') {
 </div>
 </div>
 <!-- camplist__post__btns -->
+<?php endif; ?>
 <div class="camplist__post__prev">
 <a class="btn btn-light" href="<?php echo $home; ?>/camplist/"><i class="fas fa-play-circle text-success"></i>募集中のキャンプ一覧へ戻る</a>
 </div>
-<?php endif; ?>
 
 </div>
 </section>

@@ -130,7 +130,7 @@ $nick_name = get_field('ol_name');
 <?php
 $args = [
     'posts_per_page' => 10,
-    'post_type' => 'palce',
+    'post_type' => 'facility',
     'orderby' => 'date',
     'order' => 'DESC'
 ];
@@ -146,8 +146,8 @@ $url = get_field('ol_url');
 <div class="place__list__inner__img"><img src="<?php echo $i; ?>" alt="<?php echo $t; ?>"></div>
 <div class="place__list__inner__txt">
 <h3><?php echo $t; ?></h3>
-<p><?php echo strip_tags(get_the_content()); ?></p>
-<div class="place__list__inner__link"><a class="more-txt" href="<?php echo $url; ?>" target="_blank">詳しく見る<i class="fas fa-play-circle text-success ml-1"></i></a></div>
+<p><?php the_field('facility_txt'); ?></p>
+<div class="place__list__inner__link"><a class="more-txt" href="<?php the_permalink(); ?>">詳しく見る<i class="fas fa-play-circle text-success ml-1"></i></a></div>
 </div>
 </div>
 <?php endforeach; wp_reset_postdata(); ?>
@@ -156,8 +156,7 @@ $url = get_field('ol_url');
 <div class="container">
 <div class="place__box">
 <h3 class="ttl__h3">その他の活動場所</h3>
-<p class="mb-0">ユースサービス大阪が運営している施設以外の場所へ出かけ、様々なキャンプを実施しています。
-YMCA阿南海洋センター・国立淡路⻘少年交流の家・大阪府立⻘少年海洋センター・尼崎市立美方高原自然の家（兵庫県香美町）・ハチ高原（兵庫県養父市）・国立妙高⻘少年自然の家（新潟県妙高市）・大阪府立大型児童館「ビッグバン」・国立乗鞍⻘少年交流の家（岐⾩県高⼭市） など</p>
+<p class="mb-0">ユースサービス大阪が運営している施設以外の場所へ出かけ、様々なキャンプを実施しています。<br>YMCA阿南海洋センター・国立淡路⻘少年交流の家・大阪府立⻘少年海洋センター・尼崎市立美方高原自然の家（兵庫県香美町）・ハチ高原（兵庫県養父市）・国立妙高⻘少年自然の家（新潟県妙高市）・大阪府立大型児童館「ビッグバン」・国立乗鞍⻘少年交流の家（岐⾩県高⼭市） など</p>
 </div>
 </div>
 </section>

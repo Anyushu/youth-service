@@ -93,7 +93,7 @@ $cat_name = $categories[0]->name;
 <div class="home__news__wrap__side">
 <div class="mb-4"><a href="<?php echo $home; ?>/beginner/"><img class="w-100" src="<?php echo $wp_url; ?>/dist/images/bnr_beginner.png" alt=""></a></div>
 <div class="mb-4"><a href="https://www.facebook.com/yso.or.jp" target="_blank"><img class="w-100" src="<?php echo $wp_url; ?>/dist/images/bnr_facebook.png" alt=""></a></div>
-<div><a href="https://www.instagram.com/yso̲camp/" target="_blank"><img class="w-100" src="<?php echo $wp_url; ?>/dist/images/bnr_instagram.png" alt=""></a></div>
+<div><a href="https://www.instagram.com/yso_camp/" target="_blank"><img class="w-100" src="<?php echo $wp_url; ?>/dist/images/bnr_instagram.png" alt=""></a></div>
 </div>
 </div>
 </div>

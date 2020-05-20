@@ -1,6 +1,8 @@
 .about {
   &__access {
     &__map {
+      max-width: 930px;
+      margin: 0 auto;
       display: flex;
       justify-content: space-between;
       align-items: stretch;

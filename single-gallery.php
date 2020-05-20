@@ -36,10 +36,12 @@ $gallery_pics = SCF::get('gallery_pics');
 <div><img src="<?php echo wp_get_attachment_url($val['gallery_img']); ?>" alt="画像"></div>
 <?php endforeach; ?>
 </div>
+<?php if($gallery_zip): ?>
 <div class="gallery__post__dl">
 <a class="btn btn-secondary" href="<?php echo $gallery_zip; ?>">写真一括ダウンロード（ZIP）</a>
 <p class="small">※スマホでのダウンロードはできませんので、予めご了承くださいませ。</p>
 </div>
+<?php endif; ?>
 <?php else: ?>
 <?php echo get_the_password_form(); ?>
 <?php endif; ?>

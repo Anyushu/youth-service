@@ -45,7 +45,7 @@ for ($i=1; $i <= 5; $i++) {
 <div class="sec facility">
 <div class="container">
 <div class="camplist__info__status">
-<h2>吉野宮滝野外学校</h2>
+<h2><?php the_title(); ?></h2>
 </div>
 <p><?php echo $txt; ?></p>
 </div>
@@ -105,10 +105,10 @@ for ($i=1; $i <= 5; $i++) {
 <h3>アクセス<span class="quicksand">ACCESS</span></h3>
 <div class="facility__map__inner">
 <div class="embed-responsive embed-responsive-21by9 d-md-block d-none">
-<iframe class="embed-responsive-item" src="https://www.google.com/maps?q=<?php echo $map['lat']; ?>,<?php echo $map['lng']; ?>&hl=jp&output=embed"></iframe>
+<iframe class="embed-responsive-item" src="https://maps.google.co.jp/maps?output=embed&q=<?php echo $map['address']; ?>"></iframe>
 </div>
 <div class="embed-responsive embed-responsive-4by3 d-md-none d-block">
-<iframe class="embed-responsive-item" src="https://www.google.com/maps?q=<?php echo $map['lat']; ?>,<?php echo $map['lng']; ?>&hl=jp&output=embed"></iframe>
+<iframe class="embed-responsive-item" src="https://maps.google.co.jp/maps?output=embed&q=<?php echo $map['address']; ?>"></iframe>
 </div>
 </div>
 </div>

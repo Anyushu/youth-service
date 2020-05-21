@@ -10,7 +10,7 @@ $(function ($) {
   let h = $(window).height();
   let md = 991.98;
 
-  $(".home__mv").css('height', h);
+  $(".home__mv").css("height", h);
 
   // リサイズ
   $(window).on("load resize", function () {
@@ -271,5 +271,9 @@ $(function ($) {
 
   $('[data-dismiss="modal"]').on("click", function () {
     $(".modal").modal("hide");
+  });
+
+  $("#zip").keyup(function () {
+    AjaxZip3.zip2addr(this, "", "address1", "address2");
   });
 });

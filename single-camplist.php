@@ -7,6 +7,7 @@ $try = $wp_url.'/dist/images/icon_tryangle.png';
 $times = $wp_url.'/dist/images/icon_times.png';
 
 get_header(); ?>
+<script src="https://ajaxzip3.github.io/ajaxzip3.js"></script>
 <section class="mv__sub">
 <img class="w-100" src="<?php echo $wp_url; ?>/dist/images/bg_low.png" alt="<?php the_title(); ?>">
 <h2 class="mv__sub__ttl">

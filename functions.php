@@ -1,8 +1,4 @@
 <?php
-
-update_option('siteurl', 'https://tesuto.site/youthservice/');
-update_option('home', 'https://tesuto.site/youthservice/');
-
 // アイキャッチ設定
 add_theme_support('post-thumbnails');
 
@@ -118,7 +114,7 @@ add_action('wp_enqueue_scripts', 'add_my_scripts');
 
 function my_acf_google_map_api($api)
 {
-    $api['key'] = 'AIzaSyA5_k_xrwR0k-bvx3iUeIawpfzof2Br1Pg';
+    $api['key'] = '';
     return $api;
 }
 add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');

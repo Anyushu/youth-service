@@ -32,7 +32,7 @@ get_header(); ?>
 <img src="<?php echo $wp_url; ?>/dist/images/beginner_img_left.png" alt="写真">
 <div class="container">
 <h2 class="text-center mb-md-5 pb-md-5 mb-4 pb-4"><img src="<?php echo $wp_url; ?>/dist/images/ttl_bg_intoro.png" alt="体験活動を通じた出会いを大切にします"></h2>
-<p class="text-md-center mb-0">疑似体験で溢れている現代社会にあって、子どもの成長に必要な実体験の不足が課題となっています。
+<p class="text-md-center mb-0">疑似体験で溢れている現代社会において、子どもの成長に必要な実体験の不足が課題となっています。
 <br>そのため、主体的な生活行動が可能になる幼児期（５歳児）から、
 <br>集団体験の場や、原体験としての自然の様々な事象との出会い、
 <br>生命あるものに直接触れ学ぶことのできる体験活動の場を提供しています。</p>
@@ -281,7 +281,7 @@ get_header(); ?>
 </div>
 </div>
 <div class="beginner__faq__list__inner__ans">リュックサックやスポーツバッグ、ショルダーバッグなどが適当です。
-<br>キャスター付のバッグは、キャンプ場などの施設周辺は段差も多く、かえって不便です。低学年のお子さまは、必ず自分で持てるか確認してください。</div>
+<br>キャンプ場などの施設周辺は段差も多いので、キャスター付きのバッグはかえって不便です。低学年のお子さまは、必ず自分で持てるか確認してください。</div>
 </div>
 <!-- beginner__faq__list__inner -->
 <div class="beginner__faq__list__inner">
@@ -318,7 +318,7 @@ get_header(); ?>
 <span class="beginner__faq__list__inner__ttl__btn__txt"></span>
 </div>
 </div>
-<div class="beginner__faq__list__inner__ans">アウトドアクッキングの「カートンドッグ」を作る際に使用します。洗ってイラスト図①のような形でご持参ください。</div>
+<div class="beginner__faq__list__inner__ans">アウトドアクッキングの「カートンドッグ」を作る際に使用します。</div>
 </div>
 <!-- beginner__faq__list__inner -->
 <div class="beginner__faq__list__inner">
@@ -618,13 +618,13 @@ get_header(); ?>
 <th>午前7時現在<br>
 警報発令されている場合</th>
 <td>日帰りの場合…事業中止<br>
-1泊の場合…午前10時判断断</td>
+1泊の場合…午前10時判断</td>
 </tr>
 <tr>
 <th>午前10時現在<br>
 警報が<span class="text-warning">解除された場合</span></th>
 <td>日帰りの場合…事業中止<br>
-1泊の場合…午前10時判断断</td>
+1泊の場合…午前10時判断</td>
 </tr>
 <tr>
 <th>午前10時現在<br>

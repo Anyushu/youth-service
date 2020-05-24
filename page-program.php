@@ -169,7 +169,7 @@ if (function_exists('yoast_breadcrumb')) {
 <div class="program__custom__content__inner__box">
 <div class="program__custom__content__inner__box__txt">
 <h4>プログラムのポイント</h4>
-<p class="mb-0">多様な自然環境と触れ合うことで、感性を養い、自然の素材を使った「もの作り」などにより、創造性を育みます。グループで協力して課題に取り組んでいく過程で、仲間の大切に気づき、達成の喜びを知ります。</p>
+<p class="mb-0">多様な自然環境と触れ合うことで、感性を養い、自然の素材を使った「もの作り」などにより、創造性を育みます。グループで協力して課題に取り組んでいく過程で、仲間の大切さに気づき、達成の喜びを知ります。</p>
 </div>
 <div class="program__custom__content__inner__box__img">
 <img src="<?php echo $wp_url; ?>/dist/images/custom_img_2.png" alt="プログラムのポイント">

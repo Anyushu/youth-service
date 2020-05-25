@@ -228,11 +228,11 @@ if ($camp_status !== '終了') {
 <tbody>
 <tr>
 <th>参加イベント</th>
-<td><?php echo $t; ?></td>
+<td id="camp-name"><?php echo $t; ?></td>
 </tr>
 <tr>
-<th>参加イベント</th>
-<td><?php echo $camp_day; ?></td>
+<th>期間</th>
+<td id="camp-days"><?php echo $camp_day; ?></td>
 </tr>
 </tbody>
 </table>
@@ -243,4 +243,14 @@ if ($camp_status !== '終了') {
 <!-- ol__form -->
 <?php endif; ?>
 <?php endwhile; endif; ?>
+<script>
+jQuery(document).ready(function(){
+    let name = jQuery('#camp-name').text();
+    console.log(name);
+    let days = jQuery('#camp-days').text();
+    console.log(days);
+    jQuery('.wpcf7-hidden.camp-name').val(name);
+    jQuery('.wpcf7-hidden.camp-days').val(days);
+});
+</script>
 <?php get_footer();

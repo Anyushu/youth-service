@@ -22,6 +22,8 @@ $args = [
   'order' => 'DESC'
 ];
 $posts = get_posts($args);
+$num = (int)(count($posts) / 3) * 3;
+$posts = array_slice($posts, 0, $num);
 foreach ($posts as $post): setup_postdata($post);
 $id = get_the_ID();
 if (has_post_thumbnail()) {

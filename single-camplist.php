@@ -197,7 +197,7 @@ if ($camp_status !== '終了') {
 </div>
 <?php endif; ?>
 <!-- camplist__post__ssl -->
-<?php if ($camp_status == '受付中' || $camp_status == '残りわずか'): ?>
+<?php if ($camp_status == '受付中'): ?>
 <div class="camplist__post__btns">
 <div class="mr-md-4 mb-md-0 mb-4">
 <p class="text-center small mb-2">ホームページからお申込みの方</p>
@@ -216,7 +216,7 @@ if ($camp_status !== '終了') {
 
 </div>
 </section>
-<?php if ($camp_status == '受付中' || $camp_status == '残りわずか'): ?>
+<?php if ($camp_status == '受付中'): ?>
 <section id="form" class="sec ol__form bg-success camplist__form">
 <div class="container">
 <h2 class="ttl__h2">

@@ -225,6 +225,9 @@ select {
             list-style: none;
           }
         }
+        p {
+          margin-bottom: 0;
+        }
       }
       th {
         min-width: 30%;

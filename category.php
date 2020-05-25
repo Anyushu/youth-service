@@ -23,6 +23,8 @@ if (function_exists('yoast_breadcrumb')) {
 $id = get_the_ID();
 if (has_post_thumbnail()) {
     $thumbnail = get_the_post_thumbnail_url(get_the_ID(), 'large');
+} else {
+    $thumbnail = $wp_url."/dist/images/no_img.png";
 }
 $t = get_the_title();
 $p = get_the_permalink();

@@ -178,7 +178,12 @@ $cat_name = $categories[0]->name;
 </a>
 </div>
 </div>
-<p class="text-center mb-0"><img class="img-switch" src="<?php echo $wp_url; ?>/dist/images/agree_pc.png" alt="" srcset="<?php echo $wp_url; ?>/dist/images/agree_pc.png 1x, <?php echo $wp_url; ?>/dist/images/agree_pc@2x.png 2x"></p>
+<p class="text-center mb-0 home__program__links">
+<a class="kokoro" href="http://www.kokoro-saisei.jp/" target="_blank"></a>
+<a class="seinen" href="http://www.pref.osaka.lg.jp/koseishonen/fuminkaigi/" target="_blank"></a>
+<a class="genki" href="http://www.pref.osaka.lg.jp/danjo/ikiiki2013/" target="_blank"></a>
+<img class="img-switch" src="<?php echo $wp_url; ?>/dist/images/agree_pc.png" alt="" srcset="<?php echo $wp_url; ?>/dist/images/agree_pc.png 1x, <?php echo $wp_url; ?>/dist/images/agree_pc@2x.png 2x">
+</p>
 </div>
 </div>
 <?php get_footer();

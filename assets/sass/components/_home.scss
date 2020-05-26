@@ -11,7 +11,7 @@
     @include media-breakpoint-down(md) {
       height: 95vh;
     }
-    &>img {
+    & > img {
       position: absolute;
       z-index: 1;
       bottom: 0;
@@ -441,6 +441,52 @@
         @include media-breakpoint-down(md) {
           width: 100%;
           margin-bottom: 2rem;
+        }
+      }
+    }
+    &__links {
+      position: relative;
+      a {
+        position: absolute;
+        // background-color: #eee;
+      }
+      .kokoro {
+        width: 141px;
+        height: 66px;
+        top: 46px;
+        left: 509px;
+        @include media-breakpoint-down(md) {
+          width: 101px;
+          height: 53px;
+          top: auto;
+          bottom: 35px;
+          left: 10%;
+        }
+      }
+      .seinen {
+        width: 82px;
+        height: 88px;
+        top: 33px;
+        right: 339px;
+        @include media-breakpoint-down(md) {
+          width: 65px;
+          height: 65px;
+          top: auto;
+          bottom: 35px;
+          right: 35%;
+        }
+      }
+      .genki {
+        width: 82px;
+        height: 88px;
+        top: 33px;
+        right: 200px;
+        @include media-breakpoint-down(md) {
+          width: 52px;
+          height: 66px;
+          top: auto;
+          right: 13%;
+          bottom: 35px;
         }
       }
     }
